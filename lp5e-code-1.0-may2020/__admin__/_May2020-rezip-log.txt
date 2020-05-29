@@ -1,0 +1,1982 @@
+# How the latest examples zip was rezipped in May 2020 to fix a Mac OS bug
+
+
+####################################################################################
+# EXTRACT prior zip with ziptools (learning-python.com/ziptool.html)
+# Mac OS Catalina Finder clicks fail on this with "Error 22" in 2020
+####################################################################################
+
+
+~/Desktop/temp/LP5E-zip$ py3 $Z/zip-extract.py lp5e-code-1.0-jun1813.zip . -permissions
+Unzipping from lp5e-code-1.0-jun1813.zip to .
+Extracted lp5e-code-1.0-jun1813/
+		=> lp5e-code-1.0-jun1813
+Extracted lp5e-code-1.0-jun1813/__admin__/
+		=> lp5e-code-1.0-jun1813/__admin__
+Extracted lp5e-code-1.0-jun1813/__admin__/__pycache__/
+		=> lp5e-code-1.0-jun1813/__admin__/__pycache__
+Extracted lp5e-code-1.0-jun1813/__admin__/__pycache__/dirdiff.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/__admin__/__pycache__/dirdiff.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/__admin__/__pycache__/visitor.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/__admin__/__pycache__/visitor.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/__admin__/cleanpyc-run.txt
+		=> lp5e-code-1.0-jun1813/__admin__/cleanpyc-run.txt
+Extracted lp5e-code-1.0-jun1813/__admin__/cleanpyc.py
+		=> lp5e-code-1.0-jun1813/__admin__/cleanpyc.py
+Extracted lp5e-code-1.0-jun1813/__admin__/diffall-run-full.txt
+		=> lp5e-code-1.0-jun1813/__admin__/diffall-run-full.txt
+Extracted lp5e-code-1.0-jun1813/__admin__/diffall-run.txt
+		=> lp5e-code-1.0-jun1813/__admin__/diffall-run.txt
+Extracted lp5e-code-1.0-jun1813/__admin__/diffall.py
+		=> lp5e-code-1.0-jun1813/__admin__/diffall.py
+Extracted lp5e-code-1.0-jun1813/__admin__/dirdiff.py
+		=> lp5e-code-1.0-jun1813/__admin__/dirdiff.py
+Extracted lp5e-code-1.0-jun1813/__admin__/visitor.py
+		=> lp5e-code-1.0-jun1813/__admin__/visitor.py
+Extracted lp5e-code-1.0-jun1813/__admin__/visitor_sloc-run.txt
+		=> lp5e-code-1.0-jun1813/__admin__/visitor_sloc-run.txt
+Extracted lp5e-code-1.0-jun1813/__admin__/visitor_sloc.py
+		=> lp5e-code-1.0-jun1813/__admin__/visitor_sloc.py
+Extracted lp5e-code-1.0-jun1813/code/
+		=> lp5e-code-1.0-jun1813/code
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/access.cpython-33.pyo
+		=> lp5e-code-1.0-jun1813/code/__pycache__/access.cpython-33.pyo
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/access_builtins.cpython-33.pyo
+		=> lp5e-code-1.0-jun1813/code/__pycache__/access_builtins.cpython-33.pyo
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/dicts.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/code/__pycache__/dicts.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/factorials.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/code/__pycache__/factorials.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/mymod.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/code/__pycache__/mymod.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/mymod2.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/code/__pycache__/mymod2.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/rangetest.cpython-33.pyo
+		=> lp5e-code-1.0-jun1813/code/__pycache__/rangetest.cpython-33.pyo
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/rangetest1.cpython-33.pyo
+		=> lp5e-code-1.0-jun1813/code/__pycache__/rangetest1.cpython-33.pyo
+Extracted lp5e-code-1.0-jun1813/code/__pycache__/reversals.cpython-33.pyc
+		=> lp5e-code-1.0-jun1813/code/__pycache__/reversals.cpython-33.pyc
+Extracted lp5e-code-1.0-jun1813/code/a.py
+		=> lp5e-code-1.0-jun1813/code/a.py
+Extracted lp5e-code-1.0-jun1813/code/a1/
+		=> lp5e-code-1.0-jun1813/code/a1
+Extracted lp5e-code-1.0-jun1813/code/a1/b/
+		=> lp5e-code-1.0-jun1813/code/a1/b
+Extracted lp5e-code-1.0-jun1813/code/a1/b/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/a1/b/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/a1/b/a1.py
+		=> lp5e-code-1.0-jun1813/code/a1/b/a1.py
+Extracted lp5e-code-1.0-jun1813/code/a1/b/mod.py
+		=> lp5e-code-1.0-jun1813/code/a1/b/mod.py
+Extracted lp5e-code-1.0-jun1813/code/access-desc-test.py
+		=> lp5e-code-1.0-jun1813/code/access-desc-test.py
+Extracted lp5e-code-1.0-jun1813/code/access-test.py
+		=> lp5e-code-1.0-jun1813/code/access-test.py
+Extracted lp5e-code-1.0-jun1813/code/access.py
+		=> lp5e-code-1.0-jun1813/code/access.py
+Extracted lp5e-code-1.0-jun1813/code/access1.py
+		=> lp5e-code-1.0-jun1813/code/access1.py
+Extracted lp5e-code-1.0-jun1813/code/access2.py
+		=> lp5e-code-1.0-jun1813/code/access2.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins0.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins0.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins1.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins1.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins2.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins2.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins2b.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins2b.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins3.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins3.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins3b.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins3b.py
+Extracted lp5e-code-1.0-jun1813/code/access2_builtins4.py
+		=> lp5e-code-1.0-jun1813/code/access2_builtins4.py
+Extracted lp5e-code-1.0-jun1813/code/access2_inserts.py
+		=> lp5e-code-1.0-jun1813/code/access2_inserts.py
+Extracted lp5e-code-1.0-jun1813/code/access_builtins.py
+		=> lp5e-code-1.0-jun1813/code/access_builtins.py
+Extracted lp5e-code-1.0-jun1813/code/access_builtins_desc.py
+		=> lp5e-code-1.0-jun1813/code/access_builtins_desc.py
+Extracted lp5e-code-1.0-jun1813/code/access_desc.py
+		=> lp5e-code-1.0-jun1813/code/access_desc.py
+Extracted lp5e-code-1.0-jun1813/code/adder.py
+		=> lp5e-code-1.0-jun1813/code/adder.py
+Extracted lp5e-code-1.0-jun1813/code/adder2.py
+		=> lp5e-code-1.0-jun1813/code/adder2.py
+Extracted lp5e-code-1.0-jun1813/code/adders.py
+		=> lp5e-code-1.0-jun1813/code/adders.py
+Extracted lp5e-code-1.0-jun1813/code/alls.py
+		=> lp5e-code-1.0-jun1813/code/alls.py
+Extracted lp5e-code-1.0-jun1813/code/argtest.py
+		=> lp5e-code-1.0-jun1813/code/argtest.py
+Extracted lp5e-code-1.0-jun1813/code/argtest_testmeth.py
+		=> lp5e-code-1.0-jun1813/code/argtest_testmeth.py
+Extracted lp5e-code-1.0-jun1813/code/asserter.py
+		=> lp5e-code-1.0-jun1813/code/asserter.py
+Extracted lp5e-code-1.0-jun1813/code/attrs1.py
+		=> lp5e-code-1.0-jun1813/code/attrs1.py
+Extracted lp5e-code-1.0-jun1813/code/b.py
+		=> lp5e-code-1.0-jun1813/code/b.py
+Extracted lp5e-code-1.0-jun1813/code/bad.py
+		=> lp5e-code-1.0-jun1813/code/bad.py
+Extracted lp5e-code-1.0-jun1813/code/badly.exc
+		=> lp5e-code-1.0-jun1813/code/badly.exc
+Extracted lp5e-code-1.0-jun1813/code/badly.py
+		=> lp5e-code-1.0-jun1813/code/badly.py
+Extracted lp5e-code-1.0-jun1813/code/bothmethods.py
+		=> lp5e-code-1.0-jun1813/code/bothmethods.py
+Extracted lp5e-code-1.0-jun1813/code/bothmethods_decorators.py
+		=> lp5e-code-1.0-jun1813/code/bothmethods_decorators.py
+Extracted lp5e-code-1.0-jun1813/code/brian
+		=> lp5e-code-1.0-jun1813/code/brian
+Extracted lp5e-code-1.0-jun1813/code/c.py
+		=> lp5e-code-1.0-jun1813/code/c.py
+Extracted lp5e-code-1.0-jun1813/code/callables.py
+		=> lp5e-code-1.0-jun1813/code/callables.py
+Extracted lp5e-code-1.0-jun1813/code/calltracer-descr.py
+		=> lp5e-code-1.0-jun1813/code/calltracer-descr.py
+Extracted lp5e-code-1.0-jun1813/code/calltracer.py
+		=> lp5e-code-1.0-jun1813/code/calltracer.py
+Extracted lp5e-code-1.0-jun1813/code/Certificate.html
+		=> lp5e-code-1.0-jun1813/code/Certificate.html
+Extracted lp5e-code-1.0-jun1813/code/certificate.py
+		=> lp5e-code-1.0-jun1813/code/certificate.py
+Extracted lp5e-code-1.0-jun1813/code/Certificate.txt
+		=> lp5e-code-1.0-jun1813/code/Certificate.txt
+Extracted lp5e-code-1.0-jun1813/code/changer.py
+		=> lp5e-code-1.0-jun1813/code/changer.py
+Extracted lp5e-code-1.0-jun1813/code/classexc.py
+		=> lp5e-code-1.0-jun1813/code/classexc.py
+Extracted lp5e-code-1.0-jun1813/code/classexc2.py
+		=> lp5e-code-1.0-jun1813/code/classexc2.py
+Extracted lp5e-code-1.0-jun1813/code/classscope.py
+		=> lp5e-code-1.0-jun1813/code/classscope.py
+Extracted lp5e-code-1.0-jun1813/code/classtools.py
+		=> lp5e-code-1.0-jun1813/code/classtools.py
+Extracted lp5e-code-1.0-jun1813/code/classtree.py
+		=> lp5e-code-1.0-jun1813/code/classtree.py
+Extracted lp5e-code-1.0-jun1813/code/collector.py
+		=> lp5e-code-1.0-jun1813/code/collector.py
+Extracted lp5e-code-1.0-jun1813/code/commuter.py
+		=> lp5e-code-1.0-jun1813/code/commuter.py
+Extracted lp5e-code-1.0-jun1813/code/contains.py
+		=> lp5e-code-1.0-jun1813/code/contains.py
+Extracted lp5e-code-1.0-jun1813/code/contains_yield.py
+		=> lp5e-code-1.0-jun1813/code/contains_yield.py
+Extracted lp5e-code-1.0-jun1813/code/converters.py
+		=> lp5e-code-1.0-jun1813/code/converters.py
+Extracted lp5e-code-1.0-jun1813/code/countdown.py
+		=> lp5e-code-1.0-jun1813/code/countdown.py
+Extracted lp5e-code-1.0-jun1813/code/csvdata.txt
+		=> lp5e-code-1.0-jun1813/code/csvdata.txt
+Extracted lp5e-code-1.0-jun1813/code/data.bin
+		=> lp5e-code-1.0-jun1813/code/data.bin
+Extracted lp5e-code-1.0-jun1813/code/data.txt
+		=> lp5e-code-1.0-jun1813/code/data.txt
+Extracted lp5e-code-1.0-jun1813/code/datafile.pkl
+		=> lp5e-code-1.0-jun1813/code/datafile.pkl
+Extracted lp5e-code-1.0-jun1813/code/decoall-deco-any.py
+		=> lp5e-code-1.0-jun1813/code/decoall-deco-any.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-deco-any2.py
+		=> lp5e-code-1.0-jun1813/code/decoall-deco-any2.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-deco-any3.py
+		=> lp5e-code-1.0-jun1813/code/decoall-deco-any3.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-manual.py
+		=> lp5e-code-1.0-jun1813/code/decoall-manual.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-meta-any.py
+		=> lp5e-code-1.0-jun1813/code/decoall-meta-any.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-meta-any2.py
+		=> lp5e-code-1.0-jun1813/code/decoall-meta-any2.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-meta-any3.py
+		=> lp5e-code-1.0-jun1813/code/decoall-meta-any3.py
+Extracted lp5e-code-1.0-jun1813/code/decoall-meta.py
+		=> lp5e-code-1.0-jun1813/code/decoall-meta.py
+Extracted lp5e-code-1.0-jun1813/code/decoargs-vs-annotations.py
+		=> lp5e-code-1.0-jun1813/code/decoargs-vs-annotations.py
+Extracted lp5e-code-1.0-jun1813/code/decorator1.py
+		=> lp5e-code-1.0-jun1813/code/decorator1.py
+Extracted lp5e-code-1.0-jun1813/code/decorator2.py
+		=> lp5e-code-1.0-jun1813/code/decorator2.py
+Extracted lp5e-code-1.0-jun1813/code/decorator3.py
+		=> lp5e-code-1.0-jun1813/code/decorator3.py
+Extracted lp5e-code-1.0-jun1813/code/decorator4.py
+		=> lp5e-code-1.0-jun1813/code/decorator4.py
+Extracted lp5e-code-1.0-jun1813/code/decorator5.py
+		=> lp5e-code-1.0-jun1813/code/decorator5.py
+Extracted lp5e-code-1.0-jun1813/code/decotools.py
+		=> lp5e-code-1.0-jun1813/code/decotools.py
+Extracted lp5e-code-1.0-jun1813/code/desc-computed.py
+		=> lp5e-code-1.0-jun1813/code/desc-computed.py
+Extracted lp5e-code-1.0-jun1813/code/desc-person-nested.py
+		=> lp5e-code-1.0-jun1813/code/desc-person-nested.py
+Extracted lp5e-code-1.0-jun1813/code/desc-person.py
+		=> lp5e-code-1.0-jun1813/code/desc-person.py
+Extracted lp5e-code-1.0-jun1813/code/desc-powers.py
+		=> lp5e-code-1.0-jun1813/code/desc-powers.py
+Extracted lp5e-code-1.0-jun1813/code/desc-state-desc.py
+		=> lp5e-code-1.0-jun1813/code/desc-state-desc.py
+Extracted lp5e-code-1.0-jun1813/code/desc-state-inst.py
+		=> lp5e-code-1.0-jun1813/code/desc-state-inst.py
+Extracted lp5e-code-1.0-jun1813/code/dicts.py
+		=> lp5e-code-1.0-jun1813/code/dicts.py
+Extracted lp5e-code-1.0-jun1813/code/dicttable.py
+		=> lp5e-code-1.0-jun1813/code/dicttable.py
+Extracted lp5e-code-1.0-jun1813/code/dir1/
+		=> lp5e-code-1.0-jun1813/code/dir1
+Extracted lp5e-code-1.0-jun1813/code/dir1/__init__.py
+		=> lp5e-code-1.0-jun1813/code/dir1/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/dir1/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/dir1/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/dir1/dir2/
+		=> lp5e-code-1.0-jun1813/code/dir1/dir2
+Extracted lp5e-code-1.0-jun1813/code/dir1/dir2/__init__.py
+		=> lp5e-code-1.0-jun1813/code/dir1/dir2/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/dir1/dir2/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/dir1/dir2/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/dir1/dir2/mod.py
+		=> lp5e-code-1.0-jun1813/code/dir1/dir2/mod.py
+Extracted lp5e-code-1.0-jun1813/code/divbad.py
+		=> lp5e-code-1.0-jun1813/code/divbad.py
+Extracted lp5e-code-1.0-jun1813/code/docstr.py
+		=> lp5e-code-1.0-jun1813/code/docstr.py
+Extracted lp5e-code-1.0-jun1813/code/docstrings.py
+		=> lp5e-code-1.0-jun1813/code/docstrings.py
+Extracted lp5e-code-1.0-jun1813/code/domparse.py
+		=> lp5e-code-1.0-jun1813/code/domparse.py
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/
+		=> lp5e-code-1.0-jun1813/code/dualpkg
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/__init__.py
+		=> lp5e-code-1.0-jun1813/code/dualpkg/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/dualpkg/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/m1.py
+		=> lp5e-code-1.0-jun1813/code/dualpkg/m1.py
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/m2.py
+		=> lp5e-code-1.0-jun1813/code/dualpkg/m2.py
+Extracted lp5e-code-1.0-jun1813/code/dualpkg/results.txt
+		=> lp5e-code-1.0-jun1813/code/dualpkg/results.txt
+Extracted lp5e-code-1.0-jun1813/code/employees.py
+		=> lp5e-code-1.0-jun1813/code/employees.py
+Extracted lp5e-code-1.0-jun1813/code/etreeparse.py
+		=> lp5e-code-1.0-jun1813/code/etreeparse.py
+Extracted lp5e-code-1.0-jun1813/code/except-finally.py
+		=> lp5e-code-1.0-jun1813/code/except-finally.py
+Extracted lp5e-code-1.0-jun1813/code/excparse.py
+		=> lp5e-code-1.0-jun1813/code/excparse.py
+Extracted lp5e-code-1.0-jun1813/code/excs.py
+		=> lp5e-code-1.0-jun1813/code/excs.py
+Extracted lp5e-code-1.0-jun1813/code/exctools.py
+		=> lp5e-code-1.0-jun1813/code/exctools.py
+Extracted lp5e-code-1.0-jun1813/code/exctools_deco.py
+		=> lp5e-code-1.0-jun1813/code/exctools_deco.py
+Extracted lp5e-code-1.0-jun1813/code/exercise-final-selfstudy-code.txt
+		=> lp5e-code-1.0-jun1813/code/exercise-final-selfstudy-code.txt
+Extracted lp5e-code-1.0-jun1813/code/exercise-II-1.txt
+		=> lp5e-code-1.0-jun1813/code/exercise-II-1.txt
+Extracted lp5e-code-1.0-jun1813/code/exercise-III-4.txt
+		=> lp5e-code-1.0-jun1813/code/exercise-III-4.txt
+Extracted lp5e-code-1.0-jun1813/code/exercise-IV-7.txt
+		=> lp5e-code-1.0-jun1813/code/exercise-IV-7.txt
+Extracted lp5e-code-1.0-jun1813/code/exiter.py
+		=> lp5e-code-1.0-jun1813/code/exiter.py
+Extracted lp5e-code-1.0-jun1813/code/exiter2.py
+		=> lp5e-code-1.0-jun1813/code/exiter2.py
+Extracted lp5e-code-1.0-jun1813/code/extend-deco.py
+		=> lp5e-code-1.0-jun1813/code/extend-deco.py
+Extracted lp5e-code-1.0-jun1813/code/extend-manual.py
+		=> lp5e-code-1.0-jun1813/code/extend-manual.py
+Extracted lp5e-code-1.0-jun1813/code/extend-meta.py
+		=> lp5e-code-1.0-jun1813/code/extend-meta.py
+Extracted lp5e-code-1.0-jun1813/code/factorials.py
+		=> lp5e-code-1.0-jun1813/code/factorials.py
+Extracted lp5e-code-1.0-jun1813/code/factory.py
+		=> lp5e-code-1.0-jun1813/code/factory.py
+Extracted lp5e-code-1.0-jun1813/code/formaterror.txt
+		=> lp5e-code-1.0-jun1813/code/formaterror.txt
+Extracted lp5e-code-1.0-jun1813/code/formats.py
+		=> lp5e-code-1.0-jun1813/code/formats.py
+Extracted lp5e-code-1.0-jun1813/code/formats_currency.py
+		=> lp5e-code-1.0-jun1813/code/formats_currency.py
+Extracted lp5e-code-1.0-jun1813/code/formats_currency2.py
+		=> lp5e-code-1.0-jun1813/code/formats_currency2.py
+Extracted lp5e-code-1.0-jun1813/code/ftpfile.py
+		=> lp5e-code-1.0-jun1813/code/ftpfile.py
+Extracted lp5e-code-1.0-jun1813/code/future.py
+		=> lp5e-code-1.0-jun1813/code/future.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-builtins.py
+		=> lp5e-code-1.0-jun1813/code/getattr-builtins.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-computed.py
+		=> lp5e-code-1.0-jun1813/code/getattr-computed.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-delegate.py
+		=> lp5e-code-1.0-jun1813/code/getattr-delegate.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-person.py
+		=> lp5e-code-1.0-jun1813/code/getattr-person.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-powers.py
+		=> lp5e-code-1.0-jun1813/code/getattr-powers.py
+Extracted lp5e-code-1.0-jun1813/code/getattr-v-getattr.py
+		=> lp5e-code-1.0-jun1813/code/getattr-v-getattr.py
+Extracted lp5e-code-1.0-jun1813/code/getattr1.py
+		=> lp5e-code-1.0-jun1813/code/getattr1.py
+Extracted lp5e-code-1.0-jun1813/code/getattr2.py
+		=> lp5e-code-1.0-jun1813/code/getattr2.py
+Extracted lp5e-code-1.0-jun1813/code/getattribute-computed.py
+		=> lp5e-code-1.0-jun1813/code/getattribute-computed.py
+Extracted lp5e-code-1.0-jun1813/code/getattribute-person.py
+		=> lp5e-code-1.0-jun1813/code/getattribute-person.py
+Extracted lp5e-code-1.0-jun1813/code/getattribute-powers.py
+		=> lp5e-code-1.0-jun1813/code/getattribute-powers.py
+Extracted lp5e-code-1.0-jun1813/code/getattribute-powers2.py
+		=> lp5e-code-1.0-jun1813/code/getattribute-powers2.py
+Extracted lp5e-code-1.0-jun1813/code/getattribute1.py
+		=> lp5e-code-1.0-jun1813/code/getattribute1.py
+Extracted lp5e-code-1.0-jun1813/code/gui1.py
+		=> lp5e-code-1.0-jun1813/code/gui1.py
+Extracted lp5e-code-1.0-jun1813/code/ham
+		=> lp5e-code-1.0-jun1813/code/ham
+Extracted lp5e-code-1.0-jun1813/code/index.html
+		=> lp5e-code-1.0-jun1813/code/index.html
+Extracted lp5e-code-1.0-jun1813/code/input.txt
+		=> lp5e-code-1.0-jun1813/code/input.txt
+Extracted lp5e-code-1.0-jun1813/code/inter2.py
+		=> lp5e-code-1.0-jun1813/code/inter2.py
+Extracted lp5e-code-1.0-jun1813/code/interact.py
+		=> lp5e-code-1.0-jun1813/code/interact.py
+Extracted lp5e-code-1.0-jun1813/code/interfacetracer.py
+		=> lp5e-code-1.0-jun1813/code/interfacetracer.py
+Extracted lp5e-code-1.0-jun1813/code/kaboom.py
+		=> lp5e-code-1.0-jun1813/code/kaboom.py
+Extracted lp5e-code-1.0-jun1813/code/lambdas1.py
+		=> lp5e-code-1.0-jun1813/code/lambdas1.py
+Extracted lp5e-code-1.0-jun1813/code/latindata
+		=> lp5e-code-1.0-jun1813/code/latindata
+Extracted lp5e-code-1.0-jun1813/code/listcomp-speed.txt
+		=> lp5e-code-1.0-jun1813/code/listcomp-speed.txt
+Extracted lp5e-code-1.0-jun1813/code/lister.py
+		=> lp5e-code-1.0-jun1813/code/lister.py
+Extracted lp5e-code-1.0-jun1813/code/listinherited-reprloop-out.txt
+		=> lp5e-code-1.0-jun1813/code/listinherited-reprloop-out.txt
+Extracted lp5e-code-1.0-jun1813/code/listinherited-reprloop.py
+		=> lp5e-code-1.0-jun1813/code/listinherited-reprloop.py
+Extracted lp5e-code-1.0-jun1813/code/listinherited.py
+		=> lp5e-code-1.0-jun1813/code/listinherited.py
+Extracted lp5e-code-1.0-jun1813/code/listinherited2.py
+		=> lp5e-code-1.0-jun1813/code/listinherited2.py
+Extracted lp5e-code-1.0-jun1813/code/listinstance-exercise.py
+		=> lp5e-code-1.0-jun1813/code/listinstance-exercise.py
+Extracted lp5e-code-1.0-jun1813/code/listinstance.py
+		=> lp5e-code-1.0-jun1813/code/listinstance.py
+Extracted lp5e-code-1.0-jun1813/code/listinstance2.py
+		=> lp5e-code-1.0-jun1813/code/listinstance2.py
+Extracted lp5e-code-1.0-jun1813/code/listtree-out1.txt
+		=> lp5e-code-1.0-jun1813/code/listtree-out1.txt
+Extracted lp5e-code-1.0-jun1813/code/listtree.py
+		=> lp5e-code-1.0-jun1813/code/listtree.py
+Extracted lp5e-code-1.0-jun1813/code/listtree2.py
+		=> lp5e-code-1.0-jun1813/code/listtree2.py
+Extracted lp5e-code-1.0-jun1813/code/listtree2x-out.txt
+		=> lp5e-code-1.0-jun1813/code/listtree2x-out.txt
+Extracted lp5e-code-1.0-jun1813/code/listtree3x-out.txt
+		=> lp5e-code-1.0-jun1813/code/listtree3x-out.txt
+Extracted lp5e-code-1.0-jun1813/code/lp5e-large.jpg
+		=> lp5e-code-1.0-jun1813/code/lp5e-large.jpg
+Extracted lp5e-code-1.0-jun1813/code/lp5e-small.gif
+		=> lp5e-code-1.0-jun1813/code/lp5e-small.gif
+Extracted lp5e-code-1.0-jun1813/code/lunch.py
+		=> lp5e-code-1.0-jun1813/code/lunch.py
+Extracted lp5e-code-1.0-jun1813/code/main.py
+		=> lp5e-code-1.0-jun1813/code/main.py
+Extracted lp5e-code-1.0-jun1813/code/makedb.py
+		=> lp5e-code-1.0-jun1813/code/makedb.py
+Extracted lp5e-code-1.0-jun1813/code/makeopen.py
+		=> lp5e-code-1.0-jun1813/code/makeopen.py
+Extracted lp5e-code-1.0-jun1813/code/makeopen_class.py
+		=> lp5e-code-1.0-jun1813/code/makeopen_class.py
+Extracted lp5e-code-1.0-jun1813/code/maker.py
+		=> lp5e-code-1.0-jun1813/code/maker.py
+Extracted lp5e-code-1.0-jun1813/code/manage-inst-deco.py
+		=> lp5e-code-1.0-jun1813/code/manage-inst-deco.py
+Extracted lp5e-code-1.0-jun1813/code/manage-inst-meta.py
+		=> lp5e-code-1.0-jun1813/code/manage-inst-meta.py
+Extracted lp5e-code-1.0-jun1813/code/manynames.py
+		=> lp5e-code-1.0-jun1813/code/manynames.py
+Extracted lp5e-code-1.0-jun1813/code/mapattrs-lister.py
+		=> lp5e-code-1.0-jun1813/code/mapattrs-lister.py
+Extracted lp5e-code-1.0-jun1813/code/mapattrs-slots.py
+		=> lp5e-code-1.0-jun1813/code/mapattrs-slots.py
+Extracted lp5e-code-1.0-jun1813/code/mapattrs.py
+		=> lp5e-code-1.0-jun1813/code/mapattrs.py
+Extracted lp5e-code-1.0-jun1813/code/mapattrs_getattr.py
+		=> lp5e-code-1.0-jun1813/code/mapattrs_getattr.py
+Extracted lp5e-code-1.0-jun1813/code/mapattrs_noslots.py
+		=> lp5e-code-1.0-jun1813/code/mapattrs_noslots.py
+Extracted lp5e-code-1.0-jun1813/code/mergedexc.py
+		=> lp5e-code-1.0-jun1813/code/mergedexc.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass1-2x-nosuper.py
+		=> lp5e-code-1.0-jun1813/code/metaclass1-2x-nosuper.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass1-2x.py
+		=> lp5e-code-1.0-jun1813/code/metaclass1-2x.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass1.py
+		=> lp5e-code-1.0-jun1813/code/metaclass1.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass2.py
+		=> lp5e-code-1.0-jun1813/code/metaclass2.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass3.py
+		=> lp5e-code-1.0-jun1813/code/metaclass3.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass4-super.py
+		=> lp5e-code-1.0-jun1813/code/metaclass4-super.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass4.py
+		=> lp5e-code-1.0-jun1813/code/metaclass4.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass5-hmm.py
+		=> lp5e-code-1.0-jun1813/code/metaclass5-hmm.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass5.py
+		=> lp5e-code-1.0-jun1813/code/metaclass5.py
+Extracted lp5e-code-1.0-jun1813/code/metaclass5b.py
+		=> lp5e-code-1.0-jun1813/code/metaclass5b.py
+Extracted lp5e-code-1.0-jun1813/code/metainstance.py
+		=> lp5e-code-1.0-jun1813/code/metainstance.py
+Extracted lp5e-code-1.0-jun1813/code/minmax.py
+		=> lp5e-code-1.0-jun1813/code/minmax.py
+Extracted lp5e-code-1.0-jun1813/code/minmax2.py
+		=> lp5e-code-1.0-jun1813/code/minmax2.py
+Extracted lp5e-code-1.0-jun1813/code/mins.py
+		=> lp5e-code-1.0-jun1813/code/mins.py
+Extracted lp5e-code-1.0-jun1813/code/mod.py
+		=> lp5e-code-1.0-jun1813/code/mod.py
+Extracted lp5e-code-1.0-jun1813/code/mod1.py
+		=> lp5e-code-1.0-jun1813/code/mod1.py
+Extracted lp5e-code-1.0-jun1813/code/mod2.py
+		=> lp5e-code-1.0-jun1813/code/mod2.py
+Extracted lp5e-code-1.0-jun1813/code/mod3.py
+		=> lp5e-code-1.0-jun1813/code/mod3.py
+Extracted lp5e-code-1.0-jun1813/code/moda.py
+		=> lp5e-code-1.0-jun1813/code/moda.py
+Extracted lp5e-code-1.0-jun1813/code/modb.py
+		=> lp5e-code-1.0-jun1813/code/modb.py
+Extracted lp5e-code-1.0-jun1813/code/module1.py
+		=> lp5e-code-1.0-jun1813/code/module1.py
+Extracted lp5e-code-1.0-jun1813/code/module2.py
+		=> lp5e-code-1.0-jun1813/code/module2.py
+Extracted lp5e-code-1.0-jun1813/code/multiset.py
+		=> lp5e-code-1.0-jun1813/code/multiset.py
+Extracted lp5e-code-1.0-jun1813/code/mybooks.xml
+		=> lp5e-code-1.0-jun1813/code/mybooks.xml
+Extracted lp5e-code-1.0-jun1813/code/myclient.py
+		=> lp5e-code-1.0-jun1813/code/myclient.py
+Extracted lp5e-code-1.0-jun1813/code/mydir.py
+		=> lp5e-code-1.0-jun1813/code/mydir.py
+Extracted lp5e-code-1.0-jun1813/code/myfile
+		=> lp5e-code-1.0-jun1813/code/myfile
+Extracted lp5e-code-1.0-jun1813/code/myfile.py
+		=> lp5e-code-1.0-jun1813/code/myfile.py
+Extracted lp5e-code-1.0-jun1813/code/mylist.py
+		=> lp5e-code-1.0-jun1813/code/mylist.py
+Extracted lp5e-code-1.0-jun1813/code/mymap.py
+		=> lp5e-code-1.0-jun1813/code/mymap.py
+Extracted lp5e-code-1.0-jun1813/code/mymod.py
+		=> lp5e-code-1.0-jun1813/code/mymod.py
+Extracted lp5e-code-1.0-jun1813/code/mymod2.py
+		=> lp5e-code-1.0-jun1813/code/mymod2.py
+Extracted lp5e-code-1.0-jun1813/code/mypkg/
+		=> lp5e-code-1.0-jun1813/code/mypkg
+Extracted lp5e-code-1.0-jun1813/code/mypkg/__init__.py
+		=> lp5e-code-1.0-jun1813/code/mypkg/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/mypkg/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/mypkg/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/mypkg/mymod.py
+		=> lp5e-code-1.0-jun1813/code/mypkg/mymod.py
+Extracted lp5e-code-1.0-jun1813/code/mypydoc.py
+		=> lp5e-code-1.0-jun1813/code/mypydoc.py
+Extracted lp5e-code-1.0-jun1813/code/mysub.py
+		=> lp5e-code-1.0-jun1813/code/mysub.py
+Extracted lp5e-code-1.0-jun1813/code/nested1.py
+		=> lp5e-code-1.0-jun1813/code/nested1.py
+Extracted lp5e-code-1.0-jun1813/code/nested2.py
+		=> lp5e-code-1.0-jun1813/code/nested2.py
+Extracted lp5e-code-1.0-jun1813/code/nested3.py
+		=> lp5e-code-1.0-jun1813/code/nested3.py
+Extracted lp5e-code-1.0-jun1813/code/nestexc.py
+		=> lp5e-code-1.0-jun1813/code/nestexc.py
+Extracted lp5e-code-1.0-jun1813/code/ns2/
+		=> lp5e-code-1.0-jun1813/code/ns2
+Extracted lp5e-code-1.0-jun1813/code/ns3/
+		=> lp5e-code-1.0-jun1813/code/ns3
+Extracted lp5e-code-1.0-jun1813/code/ns3/dir/
+		=> lp5e-code-1.0-jun1813/code/ns3/dir
+Extracted lp5e-code-1.0-jun1813/code/ns3/dir/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns3/dir/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns3/dir/ns2.py
+		=> lp5e-code-1.0-jun1813/code/ns3/dir/ns2.py
+Extracted lp5e-code-1.0-jun1813/code/ns4/
+		=> lp5e-code-1.0-jun1813/code/ns4
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir1/
+		=> lp5e-code-1.0-jun1813/code/ns4/dir1
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir1/sub/
+		=> lp5e-code-1.0-jun1813/code/ns4/dir1/sub
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir2/
+		=> lp5e-code-1.0-jun1813/code/ns4/dir2
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir2/sub/
+		=> lp5e-code-1.0-jun1813/code/ns4/dir2/sub
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__init__.py
+		=> lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns/
+		=> lp5e-code-1.0-jun1813/code/ns
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/
+		=> lp5e-code-1.0-jun1813/code/ns/dir1
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/mod1.py
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub/mod1.py
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__init__.py
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/
+		=> lp5e-code-1.0-jun1813/code/ns/dir2
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/mod3.py
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/mod3.py
+Extracted lp5e-code-1.0-jun1813/code/ns/dir2/sub/mod2.py
+		=> lp5e-code-1.0-jun1813/code/ns/dir2/sub/mod2.py
+Extracted lp5e-code-1.0-jun1813/code/number.py
+		=> lp5e-code-1.0-jun1813/code/number.py
+Extracted lp5e-code-1.0-jun1813/code/oops.py
+		=> lp5e-code-1.0-jun1813/code/oops.py
+Extracted lp5e-code-1.0-jun1813/code/oops2.py
+		=> lp5e-code-1.0-jun1813/code/oops2.py
+Extracted lp5e-code-1.0-jun1813/code/ora-lp.jpg
+		=> lp5e-code-1.0-jun1813/code/ora-lp.jpg
+Extracted lp5e-code-1.0-jun1813/code/otherfile.py
+		=> lp5e-code-1.0-jun1813/code/otherfile.py
+Extracted lp5e-code-1.0-jun1813/code/parrot.py
+		=> lp5e-code-1.0-jun1813/code/parrot.py
+Extracted lp5e-code-1.0-jun1813/code/patternparse.py
+		=> lp5e-code-1.0-jun1813/code/patternparse.py
+Extracted lp5e-code-1.0-jun1813/code/permute.py
+		=> lp5e-code-1.0-jun1813/code/permute.py
+Extracted lp5e-code-1.0-jun1813/code/person-composite.py
+		=> lp5e-code-1.0-jun1813/code/person-composite.py
+Extracted lp5e-code-1.0-jun1813/code/person-department.py
+		=> lp5e-code-1.0-jun1813/code/person-department.py
+Extracted lp5e-code-1.0-jun1813/code/person.py
+		=> lp5e-code-1.0-jun1813/code/person.py
+Extracted lp5e-code-1.0-jun1813/code/persondb.bak
+		=> lp5e-code-1.0-jun1813/code/persondb.bak
+Extracted lp5e-code-1.0-jun1813/code/persondb.dat
+		=> lp5e-code-1.0-jun1813/code/persondb.dat
+Extracted lp5e-code-1.0-jun1813/code/persondb.dir
+		=> lp5e-code-1.0-jun1813/code/persondb.dir
+Extracted lp5e-code-1.0-jun1813/code/pizzashop.py
+		=> lp5e-code-1.0-jun1813/code/pizzashop.py
+Extracted lp5e-code-1.0-jun1813/code/pkg/
+		=> lp5e-code-1.0-jun1813/code/pkg
+Extracted lp5e-code-1.0-jun1813/code/pkg/__init__.py
+		=> lp5e-code-1.0-jun1813/code/pkg/__init__.py
+Extracted lp5e-code-1.0-jun1813/code/pkg/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/pkg/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/pkg/eggs.py
+		=> lp5e-code-1.0-jun1813/code/pkg/eggs.py
+Extracted lp5e-code-1.0-jun1813/code/pkg/main.py
+		=> lp5e-code-1.0-jun1813/code/pkg/main.py
+Extracted lp5e-code-1.0-jun1813/code/pkg/spam.py
+		=> lp5e-code-1.0-jun1813/code/pkg/spam.py
+Extracted lp5e-code-1.0-jun1813/code/primes.py
+		=> lp5e-code-1.0-jun1813/code/primes.py
+Extracted lp5e-code-1.0-jun1813/code/print3.py
+		=> lp5e-code-1.0-jun1813/code/print3.py
+Extracted lp5e-code-1.0-jun1813/code/print3_alt1.py
+		=> lp5e-code-1.0-jun1813/code/print3_alt1.py
+Extracted lp5e-code-1.0-jun1813/code/print3_alt2.py
+		=> lp5e-code-1.0-jun1813/code/print3_alt2.py
+Extracted lp5e-code-1.0-jun1813/code/printnest.py
+		=> lp5e-code-1.0-jun1813/code/printnest.py
+Extracted lp5e-code-1.0-jun1813/code/private0.py
+		=> lp5e-code-1.0-jun1813/code/private0.py
+Extracted lp5e-code-1.0-jun1813/code/prop-computed.py
+		=> lp5e-code-1.0-jun1813/code/prop-computed.py
+Extracted lp5e-code-1.0-jun1813/code/prop-desc-equiv.py
+		=> lp5e-code-1.0-jun1813/code/prop-desc-equiv.py
+Extracted lp5e-code-1.0-jun1813/code/prop-person-deco.py
+		=> lp5e-code-1.0-jun1813/code/prop-person-deco.py
+Extracted lp5e-code-1.0-jun1813/code/prop-person.py
+		=> lp5e-code-1.0-jun1813/code/prop-person.py
+Extracted lp5e-code-1.0-jun1813/code/prop-powers.py
+		=> lp5e-code-1.0-jun1813/code/prop-powers.py
+Extracted lp5e-code-1.0-jun1813/code/pseudoprivate.py
+		=> lp5e-code-1.0-jun1813/code/pseudoprivate.py
+Extracted lp5e-code-1.0-jun1813/code/py
+		=> lp5e-code-1.0-jun1813/code/py
+Extracted lp5e-code-1.0-jun1813/code/py2x/
+		=> lp5e-code-1.0-jun1813/code/py2x
+Extracted lp5e-code-1.0-jun1813/code/py2x/script0.py
+		=> lp5e-code-1.0-jun1813/code/py2x/script0.py
+Extracted lp5e-code-1.0-jun1813/code/py3x/
+		=> lp5e-code-1.0-jun1813/code/py3x
+Extracted lp5e-code-1.0-jun1813/code/py3x/__pycache__/
+		=> lp5e-code-1.0-jun1813/code/py3x/__pycache__
+Extracted lp5e-code-1.0-jun1813/code/py3x/script0.py
+		=> lp5e-code-1.0-jun1813/code/py3x/script0.py
+Extracted lp5e-code-1.0-jun1813/code/pybench.py
+		=> lp5e-code-1.0-jun1813/code/pybench.py
+Extracted lp5e-code-1.0-jun1813/code/pybench2.py
+		=> lp5e-code-1.0-jun1813/code/pybench2.py
+Extracted lp5e-code-1.0-jun1813/code/pybench2_cases-results-a-t.txt
+		=> lp5e-code-1.0-jun1813/code/pybench2_cases-results-a-t.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench2_cases-results-a.txt
+		=> lp5e-code-1.0-jun1813/code/pybench2_cases-results-a.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench2_cases-results.txt
+		=> lp5e-code-1.0-jun1813/code/pybench2_cases-results.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench2_cases.py
+		=> lp5e-code-1.0-jun1813/code/pybench2_cases.py
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases-results.txt
+		=> lp5e-code-1.0-jun1813/code/pybench_cases-results.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases.py
+		=> lp5e-code-1.0-jun1813/code/pybench_cases.py
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases0-results.txt
+		=> lp5e-code-1.0-jun1813/code/pybench_cases0-results.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases0.py
+		=> lp5e-code-1.0-jun1813/code/pybench_cases0.py
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases2-results-a-t.txt
+		=> lp5e-code-1.0-jun1813/code/pybench_cases2-results-a-t.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases2-results-a.txt
+		=> lp5e-code-1.0-jun1813/code/pybench_cases2-results-a.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases2-results.txt
+		=> lp5e-code-1.0-jun1813/code/pybench_cases2-results.txt
+Extracted lp5e-code-1.0-jun1813/code/pybench_cases2.py
+		=> lp5e-code-1.0-jun1813/code/pybench_cases2.py
+Extracted lp5e-code-1.0-jun1813/code/pydoc-py33.py
+		=> lp5e-code-1.0-jun1813/code/pydoc-py33.py
+Extracted lp5e-code-1.0-jun1813/code/pydoc/
+		=> lp5e-code-1.0-jun1813/code/pydoc
+Extracted lp5e-code-1.0-jun1813/code/pydoc/pydoc.html
+		=> lp5e-code-1.0-jun1813/code/pydoc/pydoc.html
+Extracted lp5e-code-1.0-jun1813/code/pydoc/timeit.html
+		=> lp5e-code-1.0-jun1813/code/pydoc/timeit.html
+Extracted lp5e-code-1.0-jun1813/code/python_snake_ora.gif
+		=> lp5e-code-1.0-jun1813/code/python_snake_ora.gif
+Extracted lp5e-code-1.0-jun1813/code/PythonPoweredSmall.gif
+		=> lp5e-code-1.0-jun1813/code/PythonPoweredSmall.gif
+Extracted lp5e-code-1.0-jun1813/code/rangetest.py
+		=> lp5e-code-1.0-jun1813/code/rangetest.py
+Extracted lp5e-code-1.0-jun1813/code/rangetest1.py
+		=> lp5e-code-1.0-jun1813/code/rangetest1.py
+Extracted lp5e-code-1.0-jun1813/code/rangetest1_test.py
+		=> lp5e-code-1.0-jun1813/code/rangetest1_test.py
+Extracted lp5e-code-1.0-jun1813/code/rangetest_test.py
+		=> lp5e-code-1.0-jun1813/code/rangetest_test.py
+Extracted lp5e-code-1.0-jun1813/code/reader.py
+		=> lp5e-code-1.0-jun1813/code/reader.py
+Extracted lp5e-code-1.0-jun1813/code/recur1.py
+		=> lp5e-code-1.0-jun1813/code/recur1.py
+Extracted lp5e-code-1.0-jun1813/code/recur2.py
+		=> lp5e-code-1.0-jun1813/code/recur2.py
+Extracted lp5e-code-1.0-jun1813/code/registry-deco.py
+		=> lp5e-code-1.0-jun1813/code/registry-deco.py
+Extracted lp5e-code-1.0-jun1813/code/reloadall.py
+		=> lp5e-code-1.0-jun1813/code/reloadall.py
+Extracted lp5e-code-1.0-jun1813/code/reloadall2.py
+		=> lp5e-code-1.0-jun1813/code/reloadall2.py
+Extracted lp5e-code-1.0-jun1813/code/reloadall3.py
+		=> lp5e-code-1.0-jun1813/code/reloadall3.py
+Extracted lp5e-code-1.0-jun1813/code/reversals.py
+		=> lp5e-code-1.0-jun1813/code/reversals.py
+Extracted lp5e-code-1.0-jun1813/code/robin2.py
+		=> lp5e-code-1.0-jun1813/code/robin2.py
+Extracted lp5e-code-1.0-jun1813/code/robin3.py
+		=> lp5e-code-1.0-jun1813/code/robin3.py
+Extracted lp5e-code-1.0-jun1813/code/runme.py
+		=> lp5e-code-1.0-jun1813/code/runme.py
+Extracted lp5e-code-1.0-jun1813/code/saveit.txt
+		=> lp5e-code-1.0-jun1813/code/saveit.txt
+Extracted lp5e-code-1.0-jun1813/code/savetree.txt
+		=> lp5e-code-1.0-jun1813/code/savetree.txt
+Extracted lp5e-code-1.0-jun1813/code/saxparse.py
+		=> lp5e-code-1.0-jun1813/code/saxparse.py
+Extracted lp5e-code-1.0-jun1813/code/scramble.py
+		=> lp5e-code-1.0-jun1813/code/scramble.py
+Extracted lp5e-code-1.0-jun1813/code/script.py
+		=> lp5e-code-1.0-jun1813/code/script.py
+Extracted lp5e-code-1.0-jun1813/code/script0.py
+		=> lp5e-code-1.0-jun1813/code/script0.py
+Extracted lp5e-code-1.0-jun1813/code/script1.py
+		=> lp5e-code-1.0-jun1813/code/script1.py
+Extracted lp5e-code-1.0-jun1813/code/script2.py
+		=> lp5e-code-1.0-jun1813/code/script2.py
+Extracted lp5e-code-1.0-jun1813/code/setcolor.py
+		=> lp5e-code-1.0-jun1813/code/setcolor.py
+Extracted lp5e-code-1.0-jun1813/code/setsubclass.py
+		=> lp5e-code-1.0-jun1813/code/setsubclass.py
+Extracted lp5e-code-1.0-jun1813/code/setwrapper.py
+		=> lp5e-code-1.0-jun1813/code/setwrapper.py
+Extracted lp5e-code-1.0-jun1813/code/shopfile.pkl
+		=> lp5e-code-1.0-jun1813/code/shopfile.pkl
+Extracted lp5e-code-1.0-jun1813/code/showargs.py
+		=> lp5e-code-1.0-jun1813/code/showargs.py
+Extracted lp5e-code-1.0-jun1813/code/simple.py
+		=> lp5e-code-1.0-jun1813/code/simple.py
+Extracted lp5e-code-1.0-jun1813/code/singletons.py
+		=> lp5e-code-1.0-jun1813/code/singletons.py
+Extracted lp5e-code-1.0-jun1813/code/skipper.py
+		=> lp5e-code-1.0-jun1813/code/skipper.py
+Extracted lp5e-code-1.0-jun1813/code/skipper_2x.py
+		=> lp5e-code-1.0-jun1813/code/skipper_2x.py
+Extracted lp5e-code-1.0-jun1813/code/skipper_yield.py
+		=> lp5e-code-1.0-jun1813/code/skipper_yield.py
+Extracted lp5e-code-1.0-jun1813/code/slots-test.py
+		=> lp5e-code-1.0-jun1813/code/slots-test.py
+Extracted lp5e-code-1.0-jun1813/code/small.py
+		=> lp5e-code-1.0-jun1813/code/small.py
+Extracted lp5e-code-1.0-jun1813/code/spam.txt
+		=> lp5e-code-1.0-jun1813/code/spam.txt
+Extracted lp5e-code-1.0-jun1813/code/spam_class.py
+		=> lp5e-code-1.0-jun1813/code/spam_class.py
+Extracted lp5e-code-1.0-jun1813/code/spam_class2.py
+		=> lp5e-code-1.0-jun1813/code/spam_class2.py
+Extracted lp5e-code-1.0-jun1813/code/spam_static.py
+		=> lp5e-code-1.0-jun1813/code/spam_static.py
+Extracted lp5e-code-1.0-jun1813/code/spam_static_deco.py
+		=> lp5e-code-1.0-jun1813/code/spam_static_deco.py
+Extracted lp5e-code-1.0-jun1813/code/specialize.py
+		=> lp5e-code-1.0-jun1813/code/specialize.py
+Extracted lp5e-code-1.0-jun1813/code/squares.py
+		=> lp5e-code-1.0-jun1813/code/squares.py
+Extracted lp5e-code-1.0-jun1813/code/squares_manual.py
+		=> lp5e-code-1.0-jun1813/code/squares_manual.py
+Extracted lp5e-code-1.0-jun1813/code/squares_nonyield.py
+		=> lp5e-code-1.0-jun1813/code/squares_nonyield.py
+Extracted lp5e-code-1.0-jun1813/code/squares_yield.py
+		=> lp5e-code-1.0-jun1813/code/squares_yield.py
+Extracted lp5e-code-1.0-jun1813/code/streams.py
+		=> lp5e-code-1.0-jun1813/code/streams.py
+Extracted lp5e-code-1.0-jun1813/code/sumtree.py
+		=> lp5e-code-1.0-jun1813/code/sumtree.py
+Extracted lp5e-code-1.0-jun1813/code/sumtree2.py
+		=> lp5e-code-1.0-jun1813/code/sumtree2.py
+Extracted lp5e-code-1.0-jun1813/code/temp.py
+		=> lp5e-code-1.0-jun1813/code/temp.py
+Extracted lp5e-code-1.0-jun1813/code/temp2
+		=> lp5e-code-1.0-jun1813/code/temp2
+Extracted lp5e-code-1.0-jun1813/code/temp3
+		=> lp5e-code-1.0-jun1813/code/temp3
+Extracted lp5e-code-1.0-jun1813/code/test.txt
+		=> lp5e-code-1.0-jun1813/code/test.txt
+Extracted lp5e-code-1.0-jun1813/code/testjson.txt
+		=> lp5e-code-1.0-jun1813/code/testjson.txt
+Extracted lp5e-code-1.0-jun1813/code/testmixin.py
+		=> lp5e-code-1.0-jun1813/code/testmixin.py
+Extracted lp5e-code-1.0-jun1813/code/testmixin0.py
+		=> lp5e-code-1.0-jun1813/code/testmixin0.py
+Extracted lp5e-code-1.0-jun1813/code/testprint3.py
+		=> lp5e-code-1.0-jun1813/code/testprint3.py
+Extracted lp5e-code-1.0-jun1813/code/testseqs.py
+		=> lp5e-code-1.0-jun1813/code/testseqs.py
+Extracted lp5e-code-1.0-jun1813/code/text.py
+		=> lp5e-code-1.0-jun1813/code/text.py
+Extracted lp5e-code-1.0-jun1813/code/threenames.py
+		=> lp5e-code-1.0-jun1813/code/threenames.py
+Extracted lp5e-code-1.0-jun1813/code/timer.py
+		=> lp5e-code-1.0-jun1813/code/timer.py
+Extracted lp5e-code-1.0-jun1813/code/timer0.py
+		=> lp5e-code-1.0-jun1813/code/timer0.py
+Extracted lp5e-code-1.0-jun1813/code/timer2.py
+		=> lp5e-code-1.0-jun1813/code/timer2.py
+Extracted lp5e-code-1.0-jun1813/code/timer3.py
+		=> lp5e-code-1.0-jun1813/code/timer3.py
+Extracted lp5e-code-1.0-jun1813/code/timerdeco-test.py
+		=> lp5e-code-1.0-jun1813/code/timerdeco-test.py
+Extracted lp5e-code-1.0-jun1813/code/timerdeco.py
+		=> lp5e-code-1.0-jun1813/code/timerdeco.py
+Extracted lp5e-code-1.0-jun1813/code/timerdeco1.py
+		=> lp5e-code-1.0-jun1813/code/timerdeco1.py
+Extracted lp5e-code-1.0-jun1813/code/timerdeco2.py
+		=> lp5e-code-1.0-jun1813/code/timerdeco2.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs-results.txt
+		=> lp5e-code-1.0-jun1813/code/timeseqs-results.txt
+Extracted lp5e-code-1.0-jun1813/code/timeseqs.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs2.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs2.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs2B.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs2B.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs3.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs3.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs_timer2.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs_timer2.py
+Extracted lp5e-code-1.0-jun1813/code/timeseqs_timer3.py
+		=> lp5e-code-1.0-jun1813/code/timeseqs_timer3.py
+Extracted lp5e-code-1.0-jun1813/code/timesqrt.py
+		=> lp5e-code-1.0-jun1813/code/timesqrt.py
+Extracted lp5e-code-1.0-jun1813/code/trace.py
+		=> lp5e-code-1.0-jun1813/code/trace.py
+Extracted lp5e-code-1.0-jun1813/code/trace_ns.py
+		=> lp5e-code-1.0-jun1813/code/trace_ns.py
+Extracted lp5e-code-1.0-jun1813/code/tracer0.py
+		=> lp5e-code-1.0-jun1813/code/tracer0.py
+Extracted lp5e-code-1.0-jun1813/code/tracer1.py
+		=> lp5e-code-1.0-jun1813/code/tracer1.py
+Extracted lp5e-code-1.0-jun1813/code/tracer2.py
+		=> lp5e-code-1.0-jun1813/code/tracer2.py
+Extracted lp5e-code-1.0-jun1813/code/trispam.txt
+		=> lp5e-code-1.0-jun1813/code/trispam.txt
+Extracted lp5e-code-1.0-jun1813/code/trispamup.txt
+		=> lp5e-code-1.0-jun1813/code/trispamup.txt
+Extracted lp5e-code-1.0-jun1813/code/typesubclass.py
+		=> lp5e-code-1.0-jun1813/code/typesubclass.py
+Extracted lp5e-code-1.0-jun1813/code/unders.py
+		=> lp5e-code-1.0-jun1813/code/unders.py
+Extracted lp5e-code-1.0-jun1813/code/uni2x.txt
+		=> lp5e-code-1.0-jun1813/code/uni2x.txt
+Extracted lp5e-code-1.0-jun1813/code/unidata.txt
+		=> lp5e-code-1.0-jun1813/code/unidata.txt
+Extracted lp5e-code-1.0-jun1813/code/uppdatedb.py
+		=> lp5e-code-1.0-jun1813/code/uppdatedb.py
+Extracted lp5e-code-1.0-jun1813/code/upper.py
+		=> lp5e-code-1.0-jun1813/code/upper.py
+Extracted lp5e-code-1.0-jun1813/code/utf8data
+		=> lp5e-code-1.0-jun1813/code/utf8data
+Extracted lp5e-code-1.0-jun1813/code/utfdata
+		=> lp5e-code-1.0-jun1813/code/utfdata
+Extracted lp5e-code-1.0-jun1813/code/validate_descriptors1.py
+		=> lp5e-code-1.0-jun1813/code/validate_descriptors1.py
+Extracted lp5e-code-1.0-jun1813/code/validate_descriptors2.py
+		=> lp5e-code-1.0-jun1813/code/validate_descriptors2.py
+Extracted lp5e-code-1.0-jun1813/code/validate_getattr.py
+		=> lp5e-code-1.0-jun1813/code/validate_getattr.py
+Extracted lp5e-code-1.0-jun1813/code/validate_getattribute.py
+		=> lp5e-code-1.0-jun1813/code/validate_getattribute.py
+Extracted lp5e-code-1.0-jun1813/code/validate_properties.py
+		=> lp5e-code-1.0-jun1813/code/validate_properties.py
+Extracted lp5e-code-1.0-jun1813/code/validate_tester.py
+		=> lp5e-code-1.0-jun1813/code/validate_tester.py
+Extracted lp5e-code-1.0-jun1813/code/validate_tester2.py
+		=> lp5e-code-1.0-jun1813/code/validate_tester2.py
+Extracted lp5e-code-1.0-jun1813/code/what.py
+		=> lp5e-code-1.0-jun1813/code/what.py
+Extracted lp5e-code-1.0-jun1813/code/withas.py
+		=> lp5e-code-1.0-jun1813/code/withas.py
+Extracted lp5e-code-1.0-jun1813/code/xxx¥
+		=> lp5e-code-1.0-jun1813/code/xxx¥
+Extracted lp5e-code-1.0-jun1813/code/zoo.py
+		=> lp5e-code-1.0-jun1813/code/zoo.py
+Extracted lp5e-code-1.0-jun1813/README.txt
+		=> lp5e-code-1.0-jun1813/README.txt
+Extract finished: files=390, folders=43, links=0, unknowns=0.
+
+
+####################################################################################
+# CREATE new zip from extracted content with ziptools
+####################################################################################
+
+ 
+~/Desktop/temp/LP5E-zip$ py3 $Z/zip-create.py lp5e-code-1.0-may2020.zip lp5e-code-1.0-may2020 -skipcruft
+Zipping ['lp5e-code-1.0-may2020'] to lp5e-code-1.0-may2020.zip
+Cruft patterns: {'skip': ['.*', '[dD]esktop.ini', 'Thumbs.db', '~*', '$*', '*.py[co]'], 'keep': ['.htaccess']}
+Adding folder lp5e-code-1.0-may2020
+--Skipped cruft file lp5e-code-1.0-may2020/.DS_Store
+Adding folder lp5e-code-1.0-may2020/__admin__
+Adding  file  lp5e-code-1.0-may2020/__admin__/dirdiff.py
+Adding  file  lp5e-code-1.0-may2020/__admin__/diffall.py
+Adding  file  lp5e-code-1.0-may2020/__admin__/diffall-run.txt
+Adding  file  lp5e-code-1.0-may2020/__admin__/cleanpyc-run.txt
+Adding  file  lp5e-code-1.0-may2020/__admin__/visitor_sloc.py
+Adding folder lp5e-code-1.0-may2020/__admin__/__pycache__
+--Skipped cruft file lp5e-code-1.0-may2020/__admin__/__pycache__/dirdiff.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/__admin__/__pycache__/visitor.cpython-33.pyc
+Adding  file  lp5e-code-1.0-may2020/__admin__/visitor.py
+Adding  file  lp5e-code-1.0-may2020/__admin__/visitor_sloc-run.txt
+Adding  file  lp5e-code-1.0-may2020/__admin__/cleanpyc.py
+Adding  file  lp5e-code-1.0-may2020/__admin__/diffall-run-full.txt
+Adding folder lp5e-code-1.0-may2020/code
+Adding  file  lp5e-code-1.0-may2020/code/listinherited.py
+Adding  file  lp5e-code-1.0-may2020/code/etreeparse.py
+Adding  file  lp5e-code-1.0-may2020/code/tracer2.py
+Adding  file  lp5e-code-1.0-may2020/code/bothmethods_decorators.py
+Adding  file  lp5e-code-1.0-may2020/code/decotools.py
+Adding  file  lp5e-code-1.0-may2020/code/access2.py
+Adding  file  lp5e-code-1.0-may2020/code/prop-desc-equiv.py
+Adding  file  lp5e-code-1.0-may2020/code/setcolor.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-meta-any3.py
+Adding  file  lp5e-code-1.0-may2020/code/classexc2.py
+Adding  file  lp5e-code-1.0-may2020/code/desc-state-desc.py
+Adding  file  lp5e-code-1.0-may2020/code/mapattrs_noslots.py
+Adding  file  lp5e-code-1.0-may2020/code/exercise-IV-7.txt
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases2-results-a.txt
+Adding  file  lp5e-code-1.0-may2020/code/metaclass5.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_properties.py
+Adding  file  lp5e-code-1.0-may2020/code/prop-person.py
+Adding  file  lp5e-code-1.0-may2020/code/mapattrs-slots.py
+Adding  file  lp5e-code-1.0-may2020/code/primes.py
+Adding  file  lp5e-code-1.0-may2020/code/robin2.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_getattribute.py
+Adding  file  lp5e-code-1.0-may2020/code/patternparse.py
+Adding  file  lp5e-code-1.0-may2020/code/listinherited-reprloop-out.txt
+Adding  file  lp5e-code-1.0-may2020/code/getattr1.py
+Adding  file  lp5e-code-1.0-may2020/code/temp3
+Adding  file  lp5e-code-1.0-may2020/code/calltracer.py
+Adding  file  lp5e-code-1.0-may2020/code/exercise-II-1.txt
+Adding  file  lp5e-code-1.0-may2020/code/squares_manual.py
+Adding  file  lp5e-code-1.0-may2020/code/pizzashop.py
+Adding  file  lp5e-code-1.0-may2020/code/mydir.py
+Adding  file  lp5e-code-1.0-may2020/code/trace.py
+Adding  file  lp5e-code-1.0-may2020/code/kaboom.py
+Adding  file  lp5e-code-1.0-may2020/code/divbad.py
+Adding  file  lp5e-code-1.0-may2020/code/listcomp-speed.txt
+Adding  file  lp5e-code-1.0-may2020/code/temp2
+Adding  file  lp5e-code-1.0-may2020/code/alls.py
+Adding  file  lp5e-code-1.0-may2020/code/spam_class2.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass1.py
+Adding  file  lp5e-code-1.0-may2020/code/nested3.py
+Adding  file  lp5e-code-1.0-may2020/code/permute.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-computed.py
+Adding  file  lp5e-code-1.0-may2020/code/interfacetracer.py
+Adding  file  lp5e-code-1.0-may2020/code/py
+Adding  file  lp5e-code-1.0-may2020/code/python_snake_ora.gif
+Adding  file  lp5e-code-1.0-may2020/code/what.py
+Adding  file  lp5e-code-1.0-may2020/code/streams.py
+Adding  file  lp5e-code-1.0-may2020/code/xxx¥
+Adding  file  lp5e-code-1.0-may2020/code/index.html
+Adding  file  lp5e-code-1.0-may2020/code/person.py
+Adding  file  lp5e-code-1.0-may2020/code/formats_currency2.py
+Adding  file  lp5e-code-1.0-may2020/code/oops2.py
+Adding  file  lp5e-code-1.0-may2020/code/argtest.py
+Adding  file  lp5e-code-1.0-may2020/code/changer.py
+Adding  file  lp5e-code-1.0-may2020/code/access_builtins.py
+Adding  file  lp5e-code-1.0-may2020/code/exiter2.py
+Adding  file  lp5e-code-1.0-may2020/code/nested2.py
+Adding  file  lp5e-code-1.0-may2020/code/rangetest1_test.py
+Adding  file  lp5e-code-1.0-may2020/code/myclient.py
+Adding  file  lp5e-code-1.0-may2020/code/spam_class.py
+Adding  file  lp5e-code-1.0-may2020/code/formaterror.txt
+Adding  file  lp5e-code-1.0-may2020/code/extend-deco.py
+Adding  file  lp5e-code-1.0-may2020/code/lambdas1.py
+Adding  file  lp5e-code-1.0-may2020/code/pydoc-py33.py
+Adding  file  lp5e-code-1.0-may2020/code/runme.py
+Adding  file  lp5e-code-1.0-may2020/code/listinstance.py
+Adding  file  lp5e-code-1.0-may2020/code/extend-manual.py
+Adding  file  lp5e-code-1.0-may2020/code/mybooks.xml
+Adding  file  lp5e-code-1.0-may2020/code/certificate.py
+Adding  file  lp5e-code-1.0-may2020/code/getattribute1.py
+Adding folder lp5e-code-1.0-may2020/code/ns
+Adding folder lp5e-code-1.0-may2020/code/ns/dir2
+Adding folder lp5e-code-1.0-may2020/code/ns/dir2/sub
+Adding folder lp5e-code-1.0-may2020/code/ns/dir2/sub/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/ns/dir2/sub/mod2.py
+Adding folder lp5e-code-1.0-may2020/code/ns/dir2/sub/lower
+Adding folder lp5e-code-1.0-may2020/code/ns/dir2/sub/lower/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/ns/dir2/sub/lower/mod3.py
+Adding folder lp5e-code-1.0-may2020/code/ns/dir1
+Adding folder lp5e-code-1.0-may2020/code/ns/dir1/sub
+Adding  file  lp5e-code-1.0-may2020/code/ns/dir1/sub/mod1.py
+Adding folder lp5e-code-1.0-may2020/code/ns/dir1/sub/__pycache__
+Adding folder lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg
+Adding  file  lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases2-results-a-t.txt
+Adding  file  lp5e-code-1.0-may2020/code/decoall-meta-any2.py
+Adding  file  lp5e-code-1.0-may2020/code/getattribute-computed.py
+Adding  file  lp5e-code-1.0-may2020/code/prop-powers.py
+Adding folder lp5e-code-1.0-may2020/code/pydoc
+Adding  file  lp5e-code-1.0-may2020/code/pydoc/pydoc.html
+Adding  file  lp5e-code-1.0-may2020/code/pydoc/timeit.html
+Adding  file  lp5e-code-1.0-may2020/code/metaclass4.py
+Adding  file  lp5e-code-1.0-may2020/code/saveit.txt
+Adding  file  lp5e-code-1.0-may2020/code/robin3.py
+Adding  file  lp5e-code-1.0-may2020/code/nestexc.py
+Adding  file  lp5e-code-1.0-may2020/code/exctools_deco.py
+Adding  file  lp5e-code-1.0-may2020/code/lunch.py
+Adding  file  lp5e-code-1.0-may2020/code/mymod2.py
+Adding  file  lp5e-code-1.0-may2020/code/script0.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases2-results.txt
+Adding  file  lp5e-code-1.0-may2020/code/private0.py
+Adding  file  lp5e-code-1.0-may2020/code/callables.py
+Adding  file  lp5e-code-1.0-may2020/code/classexc.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-manual.py
+Adding  file  lp5e-code-1.0-may2020/code/scramble.py
+Adding  file  lp5e-code-1.0-may2020/code/person-composite.py
+Adding  file  lp5e-code-1.0-may2020/code/prop-computed.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-delegate.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins3.py
+Adding  file  lp5e-code-1.0-may2020/code/trispamup.txt
+Adding  file  lp5e-code-1.0-may2020/code/a.py
+Adding  file  lp5e-code-1.0-may2020/code/skipper.py
+Adding  file  lp5e-code-1.0-may2020/code/access-test.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-person.py
+Adding  file  lp5e-code-1.0-may2020/code/upper.py
+Adding  file  lp5e-code-1.0-may2020/code/timer.py
+Adding  file  lp5e-code-1.0-may2020/code/decorator1.py
+Adding  file  lp5e-code-1.0-may2020/code/getattribute-person.py
+Adding  file  lp5e-code-1.0-may2020/code/maker.py
+Adding  file  lp5e-code-1.0-may2020/code/attrs1.py
+Adding  file  lp5e-code-1.0-may2020/code/bothmethods.py
+Adding  file  lp5e-code-1.0-may2020/code/timerdeco.py
+Adding  file  lp5e-code-1.0-may2020/code/dicttable.py
+Adding  file  lp5e-code-1.0-may2020/code/timesqrt.py
+Adding  file  lp5e-code-1.0-may2020/code/classscope.py
+Adding  file  lp5e-code-1.0-may2020/code/timer0.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass1-2x-nosuper.py
+Adding  file  lp5e-code-1.0-may2020/code/number.py
+Adding  file  lp5e-code-1.0-may2020/code/ham
+Adding  file  lp5e-code-1.0-may2020/code/timerdeco-test.py
+Adding  file  lp5e-code-1.0-may2020/code/squares_nonyield.py
+Adding  file  lp5e-code-1.0-may2020/code/zoo.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_descriptors2.py
+Adding  file  lp5e-code-1.0-may2020/code/mins.py
+Adding  file  lp5e-code-1.0-may2020/code/myfile.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-v-getattr.py
+Adding  file  lp5e-code-1.0-may2020/code/exctools.py
+Adding  file  lp5e-code-1.0-may2020/code/access_builtins_desc.py
+Adding  file  lp5e-code-1.0-may2020/code/rangetest.py
+Adding  file  lp5e-code-1.0-may2020/code/testprint3.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases.py
+Adding  file  lp5e-code-1.0-may2020/code/decorator5.py
+Adding  file  lp5e-code-1.0-may2020/code/listinstance-exercise.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases2.py
+Adding  file  lp5e-code-1.0-may2020/code/collector.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_inserts.py
+Adding  file  lp5e-code-1.0-may2020/code/lp5e-large.jpg
+Adding  file  lp5e-code-1.0-may2020/code/skipper_yield.py
+Adding  file  lp5e-code-1.0-may2020/code/testseqs.py
+Adding  file  lp5e-code-1.0-may2020/code/access.py
+Adding  file  lp5e-code-1.0-may2020/code/persondb.dir
+Adding  file  lp5e-code-1.0-may2020/code/mapattrs_getattr.py
+Adding  file  lp5e-code-1.0-may2020/code/recur2.py
+Adding  file  lp5e-code-1.0-may2020/code/listinstance2.py
+Adding  file  lp5e-code-1.0-may2020/code/argtest_testmeth.py
+Adding  file  lp5e-code-1.0-may2020/code/listinherited-reprloop.py
+Adding  file  lp5e-code-1.0-may2020/code/Certificate.html
+Adding  file  lp5e-code-1.0-may2020/code/mod1.py
+Adding  file  lp5e-code-1.0-may2020/code/timerdeco2.py
+Adding  file  lp5e-code-1.0-may2020/code/spam.txt
+Adding  file  lp5e-code-1.0-may2020/code/decorator4.py
+Adding  file  lp5e-code-1.0-may2020/code/latindata
+Adding  file  lp5e-code-1.0-may2020/code/validate_tester2.py
+Adding  file  lp5e-code-1.0-may2020/code/script1.py
+Adding  file  lp5e-code-1.0-may2020/code/modb.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins3b.py
+Adding folder lp5e-code-1.0-may2020/code/__pycache__
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/mymod2.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/dicts.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/factorials.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/reversals.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/access_builtins.cpython-33.pyo
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/mymod.cpython-33.pyc
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/rangetest1.cpython-33.pyo
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/access.cpython-33.pyo
+--Skipped cruft file lp5e-code-1.0-may2020/code/__pycache__/rangetest.cpython-33.pyo
+Adding  file  lp5e-code-1.0-may2020/code/metaclass5b.py
+Adding  file  lp5e-code-1.0-may2020/code/testmixin0.py
+Adding  file  lp5e-code-1.0-may2020/code/manage-inst-deco.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-meta-any.py
+Adding  file  lp5e-code-1.0-may2020/code/module1.py
+Adding  file  lp5e-code-1.0-may2020/code/print3_alt2.py
+Adding  file  lp5e-code-1.0-may2020/code/docstr.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-builtins.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr-powers.py
+Adding  file  lp5e-code-1.0-may2020/code/factory.py
+Adding  file  lp5e-code-1.0-may2020/code/exiter.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins2.py
+Adding folder lp5e-code-1.0-may2020/code/py2x
+Adding  file  lp5e-code-1.0-may2020/code/py2x/script0.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins2b.py
+Adding  file  lp5e-code-1.0-may2020/code/docstrings.py
+Adding  file  lp5e-code-1.0-may2020/code/inter2.py
+Adding  file  lp5e-code-1.0-may2020/code/Certificate.txt
+Adding  file  lp5e-code-1.0-may2020/code/listtree-out1.txt
+Adding  file  lp5e-code-1.0-may2020/code/getattribute-powers.py
+Adding  file  lp5e-code-1.0-may2020/code/commuter.py
+Adding  file  lp5e-code-1.0-may2020/code/utfdata
+Adding  file  lp5e-code-1.0-may2020/code/timer2.py
+Adding  file  lp5e-code-1.0-may2020/code/desc-person-nested.py
+Adding  file  lp5e-code-1.0-may2020/code/recur1.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs_timer3.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases0-results.txt
+Adding  file  lp5e-code-1.0-may2020/code/desc-person.py
+Adding  file  lp5e-code-1.0-may2020/code/input.txt
+Adding  file  lp5e-code-1.0-may2020/code/makeopen.py
+Adding  file  lp5e-code-1.0-may2020/code/adder2.py
+Adding  file  lp5e-code-1.0-may2020/code/mapattrs-lister.py
+Adding  file  lp5e-code-1.0-may2020/code/reader.py
+Adding  file  lp5e-code-1.0-may2020/code/desc-computed.py
+Adding  file  lp5e-code-1.0-may2020/code/withas.py
+Adding  file  lp5e-code-1.0-may2020/code/timerdeco1.py
+Adding folder lp5e-code-1.0-may2020/code/py3x
+Adding  file  lp5e-code-1.0-may2020/code/py3x/script0.py
+Adding folder lp5e-code-1.0-may2020/code/py3x/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/mod2.py
+Adding  file  lp5e-code-1.0-may2020/code/pseudoprivate.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases0.py
+Adding  file  lp5e-code-1.0-may2020/code/persondb.bak
+Adding  file  lp5e-code-1.0-may2020/code/moda.py
+Adding  file  lp5e-code-1.0-may2020/code/sumtree2.py
+Adding  file  lp5e-code-1.0-may2020/code/mysub.py
+Adding  file  lp5e-code-1.0-may2020/code/script2.py
+Adding  file  lp5e-code-1.0-may2020/code/reloadall3.py
+Adding  file  lp5e-code-1.0-may2020/code/factorials.py
+Adding  file  lp5e-code-1.0-may2020/code/ora-lp.jpg
+Adding  file  lp5e-code-1.0-may2020/code/decoargs-vs-annotations.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-deco-any.py
+Adding  file  lp5e-code-1.0-may2020/code/calltracer-descr.py
+Adding  file  lp5e-code-1.0-may2020/code/domparse.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-deco-any3.py
+Adding  file  lp5e-code-1.0-may2020/code/rangetest_test.py
+Adding  file  lp5e-code-1.0-may2020/code/module2.py
+Adding  file  lp5e-code-1.0-may2020/code/trispam.txt
+Adding  file  lp5e-code-1.0-may2020/code/contains.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs-results.txt
+Adding  file  lp5e-code-1.0-may2020/code/print3_alt1.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench2_cases-results-a.txt
+Adding  file  lp5e-code-1.0-may2020/code/showargs.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins1.py
+Adding  file  lp5e-code-1.0-may2020/code/c.py
+Adding  file  lp5e-code-1.0-may2020/code/persondb.dat
+Adding  file  lp5e-code-1.0-may2020/code/squares_yield.py
+Adding  file  lp5e-code-1.0-may2020/code/decorator3.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench2_cases-results-a-t.txt
+Adding  file  lp5e-code-1.0-may2020/code/singletons.py
+Adding  file  lp5e-code-1.0-may2020/code/listinherited2.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs.py
+Adding  file  lp5e-code-1.0-may2020/code/reloadall2.py
+Adding  file  lp5e-code-1.0-may2020/code/trace_ns.py
+Adding  file  lp5e-code-1.0-may2020/code/gui1.py
+Adding  file  lp5e-code-1.0-may2020/code/slots-test.py
+Adding  file  lp5e-code-1.0-may2020/code/mypydoc.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-deco-any2.py
+Adding  file  lp5e-code-1.0-may2020/code/person-department.py
+Adding  file  lp5e-code-1.0-may2020/code/temp.py
+Adding  file  lp5e-code-1.0-may2020/code/formats.py
+Adding  file  lp5e-code-1.0-may2020/code/small.py
+Adding  file  lp5e-code-1.0-may2020/code/shopfile.pkl
+Adding  file  lp5e-code-1.0-may2020/code/pybench2_cases.py
+Adding  file  lp5e-code-1.0-may2020/code/text.py
+Adding  file  lp5e-code-1.0-may2020/code/parrot.py
+Adding  file  lp5e-code-1.0-may2020/code/ftpfile.py
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins0.py
+Adding  file  lp5e-code-1.0-may2020/code/b.py
+Adding folder lp5e-code-1.0-may2020/code/mypkg
+Adding  file  lp5e-code-1.0-may2020/code/mypkg/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/mypkg/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/mypkg/mymod.py
+Adding  file  lp5e-code-1.0-may2020/code/decorator2.py
+Adding  file  lp5e-code-1.0-may2020/code/testjson.txt
+Adding  file  lp5e-code-1.0-may2020/code/spam_static_deco.py
+Adding  file  lp5e-code-1.0-may2020/code/timer3.py
+Adding  file  lp5e-code-1.0-may2020/code/makeopen_class.py
+Adding  file  lp5e-code-1.0-may2020/code/spam_static.py
+Adding  file  lp5e-code-1.0-may2020/code/unders.py
+Adding  file  lp5e-code-1.0-may2020/code/badly.py
+Adding  file  lp5e-code-1.0-may2020/code/manage-inst-meta.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench2.py
+Adding  file  lp5e-code-1.0-may2020/code/squares.py
+Adding  file  lp5e-code-1.0-may2020/code/registry-deco.py
+Adding  file  lp5e-code-1.0-may2020/code/datafile.pkl
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs_timer2.py
+Adding  file  lp5e-code-1.0-may2020/code/minmax.py
+Adding  file  lp5e-code-1.0-may2020/code/reversals.py
+Adding  file  lp5e-code-1.0-may2020/code/classtree.py
+Adding  file  lp5e-code-1.0-may2020/code/PythonPoweredSmall.gif
+Adding  file  lp5e-code-1.0-may2020/code/desc-state-inst.py
+Adding  file  lp5e-code-1.0-may2020/code/exercise-III-4.txt
+Adding  file  lp5e-code-1.0-may2020/code/access2_builtins4.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_descriptors1.py
+Adding  file  lp5e-code-1.0-may2020/code/desc-powers.py
+Adding  file  lp5e-code-1.0-may2020/code/mymap.py
+Adding  file  lp5e-code-1.0-may2020/code/mod3.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass5-hmm.py
+Adding folder lp5e-code-1.0-may2020/code/a1
+Adding folder lp5e-code-1.0-may2020/code/a1/b
+Adding  file  lp5e-code-1.0-may2020/code/a1/b/a1.py
+Adding folder lp5e-code-1.0-may2020/code/a1/b/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/a1/b/mod.py
+Adding  file  lp5e-code-1.0-may2020/code/metainstance.py
+Adding  file  lp5e-code-1.0-may2020/code/print3.py
+Adding  file  lp5e-code-1.0-may2020/code/utf8data
+Adding  file  lp5e-code-1.0-may2020/code/myfile
+Adding  file  lp5e-code-1.0-may2020/code/setwrapper.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench2_cases-results.txt
+Adding  file  lp5e-code-1.0-may2020/code/future.py
+Adding  file  lp5e-code-1.0-may2020/code/test.txt
+Adding  file  lp5e-code-1.0-may2020/code/reloadall3-alts.py
+Adding  file  lp5e-code-1.0-may2020/code/specialize.py
+Adding  file  lp5e-code-1.0-may2020/code/employees.py
+Adding  file  lp5e-code-1.0-may2020/code/rangetest1.py
+Adding  file  lp5e-code-1.0-may2020/code/lister.py
+Adding  file  lp5e-code-1.0-may2020/code/converters.py
+Adding  file  lp5e-code-1.0-may2020/code/excparse.py
+Adding  file  lp5e-code-1.0-may2020/code/adder.py
+Adding  file  lp5e-code-1.0-may2020/code/access_desc.py
+Adding  file  lp5e-code-1.0-may2020/code/pybench.py
+Adding  file  lp5e-code-1.0-may2020/code/nested1.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass4-super.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass3.py
+Adding folder lp5e-code-1.0-may2020/code/dir1
+Adding folder lp5e-code-1.0-may2020/code/dir1/dir2
+Adding  file  lp5e-code-1.0-may2020/code/dir1/dir2/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/dir1/dir2/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/dir1/dir2/mod.py
+Adding  file  lp5e-code-1.0-may2020/code/dir1/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/dir1/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/uni2x.txt
+Adding  file  lp5e-code-1.0-may2020/code/sumtree.py
+Adding  file  lp5e-code-1.0-may2020/code/multiset.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_getattr.py
+Adding  file  lp5e-code-1.0-may2020/code/makedb.py
+Adding  file  lp5e-code-1.0-may2020/code/tracer0.py
+Adding  file  lp5e-code-1.0-may2020/code/setsubclass.py
+Adding  file  lp5e-code-1.0-may2020/code/minmax2.py
+Adding  file  lp5e-code-1.0-may2020/code/uppdatedb.py
+Adding  file  lp5e-code-1.0-may2020/code/formats_currency.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs2.py
+Adding  file  lp5e-code-1.0-may2020/code/manynames.py
+Adding  file  lp5e-code-1.0-may2020/code/oops.py
+Adding  file  lp5e-code-1.0-may2020/code/listtree2x-out.txt
+Adding  file  lp5e-code-1.0-may2020/code/access-desc-test.py
+Adding  file  lp5e-code-1.0-may2020/code/listtree3x-out.txt
+Adding  file  lp5e-code-1.0-may2020/code/reloadall.py
+Adding  file  lp5e-code-1.0-may2020/code/main.py
+Adding  file  lp5e-code-1.0-may2020/code/script.py
+Adding  file  lp5e-code-1.0-may2020/code/unidata.txt
+Adding  file  lp5e-code-1.0-may2020/code/metaclass1-2x.py
+Adding  file  lp5e-code-1.0-may2020/code/saxparse.py
+Adding  file  lp5e-code-1.0-may2020/code/simple.py
+Adding  file  lp5e-code-1.0-may2020/code/lp5e-small.gif
+Adding  file  lp5e-code-1.0-may2020/code/mapattrs.py
+Adding  file  lp5e-code-1.0-may2020/code/adders.py
+Adding  file  lp5e-code-1.0-may2020/code/brian
+Adding  file  lp5e-code-1.0-may2020/code/mymod.py
+Adding  file  lp5e-code-1.0-may2020/code/csvdata.txt
+Adding  file  lp5e-code-1.0-may2020/code/tracer1.py
+Adding  file  lp5e-code-1.0-may2020/code/threenames.py
+Adding  file  lp5e-code-1.0-may2020/code/decoall-meta.py
+Adding  file  lp5e-code-1.0-may2020/code/mod.py
+Adding  file  lp5e-code-1.0-may2020/code/contains_yield.py
+Adding  file  lp5e-code-1.0-may2020/code/typesubclass.py
+Adding  file  lp5e-code-1.0-may2020/code/access1.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs3.py
+Adding  file  lp5e-code-1.0-may2020/code/interact.py
+Adding folder lp5e-code-1.0-may2020/code/ns2
+Adding  file  lp5e-code-1.0-may2020/code/dicts.py
+Adding  file  lp5e-code-1.0-may2020/code/mergedexc.py
+Adding  file  lp5e-code-1.0-may2020/code/mylist.py
+Adding  file  lp5e-code-1.0-may2020/code/printnest.py
+Adding  file  lp5e-code-1.0-may2020/code/extend-meta.py
+Adding  file  lp5e-code-1.0-may2020/code/testmixin.py
+Adding  file  lp5e-code-1.0-may2020/code/classtools.py
+Adding  file  lp5e-code-1.0-may2020/code/exercise-final-selfstudy-code.txt
+Adding  file  lp5e-code-1.0-may2020/code/data.bin
+Adding  file  lp5e-code-1.0-may2020/code/asserter.py
+Adding  file  lp5e-code-1.0-may2020/code/getattr2.py
+Adding  file  lp5e-code-1.0-may2020/code/except-finally.py
+Adding  file  lp5e-code-1.0-may2020/code/getattribute-powers2.py
+Adding  file  lp5e-code-1.0-may2020/code/data.txt
+Adding  file  lp5e-code-1.0-may2020/code/bad.py
+Adding folder lp5e-code-1.0-may2020/code/ns4
+Adding folder lp5e-code-1.0-may2020/code/ns4/dir2
+Adding folder lp5e-code-1.0-may2020/code/ns4/dir2/sub
+Adding  file  lp5e-code-1.0-may2020/code/ns4/dir2/sub/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/ns4/dir2/sub/__pycache__
+Adding folder lp5e-code-1.0-may2020/code/ns4/dir1
+Adding folder lp5e-code-1.0-may2020/code/ns4/dir1/sub
+Adding  file  lp5e-code-1.0-may2020/code/otherfile.py
+Adding  file  lp5e-code-1.0-may2020/code/listtree2.py
+Adding  file  lp5e-code-1.0-may2020/code/excs.py
+Adding folder lp5e-code-1.0-may2020/code/ns3
+Adding folder lp5e-code-1.0-may2020/code/ns3/dir
+Adding folder lp5e-code-1.0-may2020/code/ns3/dir/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/ns3/dir/ns2.py
+Adding  file  lp5e-code-1.0-may2020/code/skipper_2x.py
+Adding  file  lp5e-code-1.0-may2020/code/savetree.txt
+Adding  file  lp5e-code-1.0-may2020/code/badly.exc
+Adding  file  lp5e-code-1.0-may2020/code/pybench_cases-results.txt
+Adding  file  lp5e-code-1.0-may2020/code/listtree.py
+Adding  file  lp5e-code-1.0-may2020/code/validate_tester.py
+Adding  file  lp5e-code-1.0-may2020/code/prop-person-deco.py
+Adding folder lp5e-code-1.0-may2020/code/dualpkg
+Adding  file  lp5e-code-1.0-may2020/code/dualpkg/m2.py
+Adding  file  lp5e-code-1.0-may2020/code/dualpkg/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/dualpkg/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/dualpkg/results.txt
+Adding  file  lp5e-code-1.0-may2020/code/dualpkg/m1.py
+Adding folder lp5e-code-1.0-may2020/code/pkg
+Adding  file  lp5e-code-1.0-may2020/code/pkg/spam.py
+Adding  file  lp5e-code-1.0-may2020/code/pkg/__init__.py
+Adding folder lp5e-code-1.0-may2020/code/pkg/__pycache__
+Adding  file  lp5e-code-1.0-may2020/code/pkg/eggs.py
+Adding  file  lp5e-code-1.0-may2020/code/pkg/main.py
+Adding  file  lp5e-code-1.0-may2020/code/metaclass2.py
+Adding  file  lp5e-code-1.0-may2020/code/timeseqs2B.py
+Adding  file  lp5e-code-1.0-may2020/code/countdown.py
+Adding  file  lp5e-code-1.0-may2020/README.txt
+Create finished: files=380, folders=43, links=0, unknowns=0, crufts=12.
+
+
+####################################################################################
+# VERIFY full content with diffall (now part of learning-python.com/mergeall.html)
+####################################################################################
+
+
+~/Desktop/temp/LP5E-zip$ py3 /Users/me/MY-STUFF/Code/mergeall/diffall.py lp5e-code-1.0-may2020 lp5e-code-1.0-jun1813 -skipcruft
+--------------------
+Comparing lp5e-code-1.0-may2020 to lp5e-code-1.0-jun1813
+Directory lists are identical
+Comparing contents
+*DIFFER: README.txt
+--------------------
+Comparing lp5e-code-1.0-may2020/__admin__ to lp5e-code-1.0-jun1813/__admin__
+Directory lists are identical
+Comparing contents
+dirdiff.py matches
+diffall.py matches
+diffall-run.txt matches
+cleanpyc-run.txt matches
+visitor_sloc.py matches
+visitor.py matches
+visitor_sloc-run.txt matches
+cleanpyc.py matches
+diffall-run-full.txt matches
+--------------------
+Comparing lp5e-code-1.0-may2020/__admin__/__pycache__ to lp5e-code-1.0-jun1813/__admin__/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code to lp5e-code-1.0-jun1813/code
+*UNIQUE items in lp5e-code-1.0-may2020/code:
+... reloadall3-alts.py
+Comparing contents
+listinherited.py matches
+etreeparse.py matches
+tracer2.py matches
+bothmethods_decorators.py matches
+decotools.py matches
+access2.py matches
+prop-desc-equiv.py matches
+setcolor.py matches
+decoall-meta-any3.py matches
+classexc2.py matches
+desc-state-desc.py matches
+mapattrs_noslots.py matches
+exercise-IV-7.txt matches
+pybench_cases2-results-a.txt matches
+metaclass5.py matches
+validate_properties.py matches
+prop-person.py matches
+mapattrs-slots.py matches
+primes.py matches
+robin2.py matches
+validate_getattribute.py matches
+patternparse.py matches
+listinherited-reprloop-out.txt matches
+getattr1.py matches
+temp3 matches
+calltracer.py matches
+exercise-II-1.txt matches
+squares_manual.py matches
+pizzashop.py matches
+mydir.py matches
+trace.py matches
+kaboom.py matches
+divbad.py matches
+listcomp-speed.txt matches
+temp2 matches
+alls.py matches
+spam_class2.py matches
+metaclass1.py matches
+nested3.py matches
+permute.py matches
+getattr-computed.py matches
+interfacetracer.py matches
+py matches
+python_snake_ora.gif matches
+what.py matches
+streams.py matches
+xxx¥ matches
+index.html matches
+person.py matches
+formats_currency2.py matches
+oops2.py matches
+argtest.py matches
+changer.py matches
+access_builtins.py matches
+exiter2.py matches
+nested2.py matches
+rangetest1_test.py matches
+myclient.py matches
+spam_class.py matches
+formaterror.txt matches
+extend-deco.py matches
+lambdas1.py matches
+pydoc-py33.py matches
+runme.py matches
+listinstance.py matches
+extend-manual.py matches
+mybooks.xml matches
+certificate.py matches
+getattribute1.py matches
+pybench_cases2-results-a-t.txt matches
+decoall-meta-any2.py matches
+getattribute-computed.py matches
+prop-powers.py matches
+metaclass4.py matches
+saveit.txt matches
+robin3.py matches
+nestexc.py matches
+exctools_deco.py matches
+lunch.py matches
+mymod2.py matches
+script0.py matches
+pybench_cases2-results.txt matches
+private0.py matches
+callables.py matches
+classexc.py matches
+decoall-manual.py matches
+scramble.py matches
+person-composite.py matches
+prop-computed.py matches
+getattr-delegate.py matches
+access2_builtins3.py matches
+trispamup.txt matches
+a.py matches
+skipper.py matches
+access-test.py matches
+getattr-person.py matches
+upper.py matches
+timer.py matches
+decorator1.py matches
+getattribute-person.py matches
+maker.py matches
+attrs1.py matches
+bothmethods.py matches
+timerdeco.py matches
+dicttable.py matches
+timesqrt.py matches
+classscope.py matches
+timer0.py matches
+metaclass1-2x-nosuper.py matches
+number.py matches
+ham matches
+timerdeco-test.py matches
+squares_nonyield.py matches
+zoo.py matches
+validate_descriptors2.py matches
+mins.py matches
+myfile.py matches
+getattr-v-getattr.py matches
+exctools.py matches
+access_builtins_desc.py matches
+rangetest.py matches
+testprint3.py matches
+pybench_cases.py matches
+decorator5.py matches
+listinstance-exercise.py matches
+pybench_cases2.py matches
+collector.py matches
+access2_inserts.py matches
+lp5e-large.jpg matches
+skipper_yield.py matches
+testseqs.py matches
+access.py matches
+persondb.dir matches
+mapattrs_getattr.py matches
+recur2.py matches
+listinstance2.py matches
+argtest_testmeth.py matches
+listinherited-reprloop.py matches
+Certificate.html matches
+mod1.py matches
+timerdeco2.py matches
+spam.txt matches
+decorator4.py matches
+latindata matches
+validate_tester2.py matches
+script1.py matches
+modb.py matches
+access2_builtins3b.py matches
+metaclass5b.py matches
+testmixin0.py matches
+manage-inst-deco.py matches
+decoall-meta-any.py matches
+module1.py matches
+print3_alt2.py matches
+docstr.py matches
+getattr-builtins.py matches
+getattr-powers.py matches
+factory.py matches
+exiter.py matches
+access2_builtins2.py matches
+access2_builtins2b.py matches
+docstrings.py matches
+inter2.py matches
+Certificate.txt matches
+listtree-out1.txt matches
+getattribute-powers.py matches
+commuter.py matches
+utfdata matches
+timer2.py matches
+desc-person-nested.py matches
+recur1.py matches
+timeseqs_timer3.py matches
+pybench_cases0-results.txt matches
+desc-person.py matches
+input.txt matches
+makeopen.py matches
+adder2.py matches
+mapattrs-lister.py matches
+reader.py matches
+desc-computed.py matches
+withas.py matches
+timerdeco1.py matches
+mod2.py matches
+pseudoprivate.py matches
+pybench_cases0.py matches
+persondb.bak matches
+moda.py matches
+sumtree2.py matches
+mysub.py matches
+script2.py matches
+reloadall3.py matches
+factorials.py matches
+ora-lp.jpg matches
+decoargs-vs-annotations.py matches
+decoall-deco-any.py matches
+calltracer-descr.py matches
+domparse.py matches
+decoall-deco-any3.py matches
+rangetest_test.py matches
+module2.py matches
+trispam.txt matches
+contains.py matches
+timeseqs-results.txt matches
+print3_alt1.py matches
+pybench2_cases-results-a.txt matches
+showargs.py matches
+access2_builtins1.py matches
+c.py matches
+persondb.dat matches
+squares_yield.py matches
+decorator3.py matches
+pybench2_cases-results-a-t.txt matches
+singletons.py matches
+listinherited2.py matches
+timeseqs.py matches
+reloadall2.py matches
+trace_ns.py matches
+gui1.py matches
+slots-test.py matches
+mypydoc.py matches
+decoall-deco-any2.py matches
+person-department.py matches
+temp.py matches
+formats.py matches
+small.py matches
+shopfile.pkl matches
+pybench2_cases.py matches
+text.py matches
+parrot.py matches
+ftpfile.py matches
+access2_builtins0.py matches
+b.py matches
+decorator2.py matches
+testjson.txt matches
+spam_static_deco.py matches
+timer3.py matches
+makeopen_class.py matches
+spam_static.py matches
+unders.py matches
+badly.py matches
+manage-inst-meta.py matches
+pybench2.py matches
+squares.py matches
+registry-deco.py matches
+datafile.pkl matches
+timeseqs_timer2.py matches
+minmax.py matches
+reversals.py matches
+classtree.py matches
+PythonPoweredSmall.gif matches
+desc-state-inst.py matches
+exercise-III-4.txt matches
+access2_builtins4.py matches
+validate_descriptors1.py matches
+desc-powers.py matches
+mymap.py matches
+mod3.py matches
+metaclass5-hmm.py matches
+metainstance.py matches
+print3.py matches
+utf8data matches
+myfile matches
+setwrapper.py matches
+pybench2_cases-results.txt matches
+future.py matches
+test.txt matches
+specialize.py matches
+employees.py matches
+rangetest1.py matches
+lister.py matches
+converters.py matches
+excparse.py matches
+adder.py matches
+access_desc.py matches
+pybench.py matches
+nested1.py matches
+metaclass4-super.py matches
+metaclass3.py matches
+uni2x.txt matches
+sumtree.py matches
+multiset.py matches
+validate_getattr.py matches
+makedb.py matches
+tracer0.py matches
+setsubclass.py matches
+minmax2.py matches
+uppdatedb.py matches
+formats_currency.py matches
+timeseqs2.py matches
+manynames.py matches
+oops.py matches
+listtree2x-out.txt matches
+access-desc-test.py matches
+listtree3x-out.txt matches
+reloadall.py matches
+main.py matches
+script.py matches
+unidata.txt matches
+metaclass1-2x.py matches
+saxparse.py matches
+simple.py matches
+lp5e-small.gif matches
+mapattrs.py matches
+adders.py matches
+brian matches
+mymod.py matches
+csvdata.txt matches
+tracer1.py matches
+threenames.py matches
+decoall-meta.py matches
+mod.py matches
+contains_yield.py matches
+typesubclass.py matches
+access1.py matches
+timeseqs3.py matches
+interact.py matches
+dicts.py matches
+mergedexc.py matches
+mylist.py matches
+printnest.py matches
+extend-meta.py matches
+testmixin.py matches
+classtools.py matches
+exercise-final-selfstudy-code.txt matches
+data.bin matches
+asserter.py matches
+getattr2.py matches
+except-finally.py matches
+getattribute-powers2.py matches
+data.txt matches
+bad.py matches
+otherfile.py matches
+listtree2.py matches
+excs.py matches
+skipper_2x.py matches
+savetree.txt matches
+badly.exc matches
+pybench_cases-results.txt matches
+listtree.py matches
+validate_tester.py matches
+prop-person-deco.py matches
+metaclass2.py matches
+timeseqs2B.py matches
+countdown.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns to lp5e-code-1.0-jun1813/code/ns
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir2 to lp5e-code-1.0-jun1813/code/ns/dir2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir2/sub to lp5e-code-1.0-jun1813/code/ns/dir2/sub
+Directory lists are identical
+Comparing contents
+mod2.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir2/sub/__pycache__ to lp5e-code-1.0-jun1813/code/ns/dir2/sub/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir2/sub/lower to lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower
+Directory lists are identical
+Comparing contents
+mod3.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir2/sub/lower/__pycache__ to lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir1 to lp5e-code-1.0-jun1813/code/ns/dir1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir1/sub to lp5e-code-1.0-jun1813/code/ns/dir1/sub
+Directory lists are identical
+Comparing contents
+mod1.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir1/sub/__pycache__ to lp5e-code-1.0-jun1813/code/ns/dir1/sub/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg to lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg/__pycache__ to lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/pydoc to lp5e-code-1.0-jun1813/code/pydoc
+Directory lists are identical
+Comparing contents
+pydoc.html matches
+timeit.html matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/__pycache__ to lp5e-code-1.0-jun1813/code/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/py2x to lp5e-code-1.0-jun1813/code/py2x
+Directory lists are identical
+Comparing contents
+script0.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/py3x to lp5e-code-1.0-jun1813/code/py3x
+Directory lists are identical
+Comparing contents
+script0.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/py3x/__pycache__ to lp5e-code-1.0-jun1813/code/py3x/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/mypkg to lp5e-code-1.0-jun1813/code/mypkg
+Directory lists are identical
+Comparing contents
+__init__.py matches
+mymod.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/mypkg/__pycache__ to lp5e-code-1.0-jun1813/code/mypkg/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/a1 to lp5e-code-1.0-jun1813/code/a1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/a1/b to lp5e-code-1.0-jun1813/code/a1/b
+Directory lists are identical
+Comparing contents
+a1.py matches
+mod.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/a1/b/__pycache__ to lp5e-code-1.0-jun1813/code/a1/b/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dir1 to lp5e-code-1.0-jun1813/code/dir1
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dir1/dir2 to lp5e-code-1.0-jun1813/code/dir1/dir2
+Directory lists are identical
+Comparing contents
+__init__.py matches
+mod.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dir1/dir2/__pycache__ to lp5e-code-1.0-jun1813/code/dir1/dir2/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dir1/__pycache__ to lp5e-code-1.0-jun1813/code/dir1/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns2 to lp5e-code-1.0-jun1813/code/ns2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4 to lp5e-code-1.0-jun1813/code/ns4
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4/dir2 to lp5e-code-1.0-jun1813/code/ns4/dir2
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4/dir2/sub to lp5e-code-1.0-jun1813/code/ns4/dir2/sub
+Directory lists are identical
+Comparing contents
+__init__.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4/dir2/sub/__pycache__ to lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4/dir1 to lp5e-code-1.0-jun1813/code/ns4/dir1
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns4/dir1/sub to lp5e-code-1.0-jun1813/code/ns4/dir1/sub
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns3 to lp5e-code-1.0-jun1813/code/ns3
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns3/dir to lp5e-code-1.0-jun1813/code/ns3/dir
+Directory lists are identical
+Comparing contents
+ns2.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/ns3/dir/__pycache__ to lp5e-code-1.0-jun1813/code/ns3/dir/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dualpkg to lp5e-code-1.0-jun1813/code/dualpkg
+Directory lists are identical
+Comparing contents
+m2.py matches
+__init__.py matches
+results.txt matches
+m1.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/dualpkg/__pycache__ to lp5e-code-1.0-jun1813/code/dualpkg/__pycache__
+Directory lists are identical
+Comparing contents
+--------------------
+Comparing lp5e-code-1.0-may2020/code/pkg to lp5e-code-1.0-jun1813/code/pkg
+Directory lists are identical
+Comparing contents
+spam.py matches
+__init__.py matches
+eggs.py matches
+main.py matches
+--------------------
+Comparing lp5e-code-1.0-may2020/code/pkg/__pycache__ to lp5e-code-1.0-jun1813/code/pkg/__pycache__
+Directory lists are identical
+Comparing contents
+================================================================================
+Runtime hrs:mins:secs = 0:0:0.05
+Dirs checked 43, Files checked: 379, Files skipped: 0
+System metadata (cruft) files were skipped
+Diffs found: 2
+- files DIFFER at [lp5e-code-1.0-may2020/README.txt] - [lp5e-code-1.0-jun1813/README.txt]
+- items UNIQUE at [lp5e-code-1.0-may2020/code] - [lp5e-code-1.0-jun1813/code]
+End of report.
+
+
+####################################################################################
+# VERIFY content via timestamps with mergeall (learning-python.com/mergeall.html)
+####################################################################################
+
+
+~/Desktop/temp/LP5E-zip$ py3 /Users/me/MY-STUFF/Code/mergeall/mergeall.py lp5e-code-1.0-may2020 lp5e-code-1.0-jun1813 -report -skipcruft
+Starting.
+------------------------------------------------------------------------------- 
+*Collecting tree differences
+Skipping system cruft (metadata) files in both FROM and TO
+comparing [lp5e-code-1.0-may2020] [lp5e-code-1.0-jun1813]
+comparing [lp5e-code-1.0-may2020/__admin__] [lp5e-code-1.0-jun1813/__admin__]
+comparing [lp5e-code-1.0-may2020/__admin__/__pycache__] [lp5e-code-1.0-jun1813/__admin__/__pycache__]
+comparing [lp5e-code-1.0-may2020/code] [lp5e-code-1.0-jun1813/code]
+comparing [lp5e-code-1.0-may2020/code/ns] [lp5e-code-1.0-jun1813/code/ns]
+comparing [lp5e-code-1.0-may2020/code/ns/dir2] [lp5e-code-1.0-jun1813/code/ns/dir2]
+comparing [lp5e-code-1.0-may2020/code/ns/dir2/sub] [lp5e-code-1.0-jun1813/code/ns/dir2/sub]
+comparing [lp5e-code-1.0-may2020/code/ns/dir2/sub/__pycache__] [lp5e-code-1.0-jun1813/code/ns/dir2/sub/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/ns/dir2/sub/lower] [lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower]
+comparing [lp5e-code-1.0-may2020/code/ns/dir2/sub/lower/__pycache__] [lp5e-code-1.0-jun1813/code/ns/dir2/sub/lower/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/ns/dir1] [lp5e-code-1.0-jun1813/code/ns/dir1]
+comparing [lp5e-code-1.0-may2020/code/ns/dir1/sub] [lp5e-code-1.0-jun1813/code/ns/dir1/sub]
+comparing [lp5e-code-1.0-may2020/code/ns/dir1/sub/__pycache__] [lp5e-code-1.0-jun1813/code/ns/dir1/sub/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg] [lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg]
+comparing [lp5e-code-1.0-may2020/code/ns/dir1/sub/pkg/__pycache__] [lp5e-code-1.0-jun1813/code/ns/dir1/sub/pkg/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/pydoc] [lp5e-code-1.0-jun1813/code/pydoc]
+comparing [lp5e-code-1.0-may2020/code/__pycache__] [lp5e-code-1.0-jun1813/code/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/py2x] [lp5e-code-1.0-jun1813/code/py2x]
+comparing [lp5e-code-1.0-may2020/code/py3x] [lp5e-code-1.0-jun1813/code/py3x]
+comparing [lp5e-code-1.0-may2020/code/py3x/__pycache__] [lp5e-code-1.0-jun1813/code/py3x/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/mypkg] [lp5e-code-1.0-jun1813/code/mypkg]
+comparing [lp5e-code-1.0-may2020/code/mypkg/__pycache__] [lp5e-code-1.0-jun1813/code/mypkg/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/a1] [lp5e-code-1.0-jun1813/code/a1]
+comparing [lp5e-code-1.0-may2020/code/a1/b] [lp5e-code-1.0-jun1813/code/a1/b]
+comparing [lp5e-code-1.0-may2020/code/a1/b/__pycache__] [lp5e-code-1.0-jun1813/code/a1/b/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/dir1] [lp5e-code-1.0-jun1813/code/dir1]
+comparing [lp5e-code-1.0-may2020/code/dir1/dir2] [lp5e-code-1.0-jun1813/code/dir1/dir2]
+comparing [lp5e-code-1.0-may2020/code/dir1/dir2/__pycache__] [lp5e-code-1.0-jun1813/code/dir1/dir2/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/dir1/__pycache__] [lp5e-code-1.0-jun1813/code/dir1/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/ns2] [lp5e-code-1.0-jun1813/code/ns2]
+comparing [lp5e-code-1.0-may2020/code/ns4] [lp5e-code-1.0-jun1813/code/ns4]
+comparing [lp5e-code-1.0-may2020/code/ns4/dir2] [lp5e-code-1.0-jun1813/code/ns4/dir2]
+comparing [lp5e-code-1.0-may2020/code/ns4/dir2/sub] [lp5e-code-1.0-jun1813/code/ns4/dir2/sub]
+comparing [lp5e-code-1.0-may2020/code/ns4/dir2/sub/__pycache__] [lp5e-code-1.0-jun1813/code/ns4/dir2/sub/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/ns4/dir1] [lp5e-code-1.0-jun1813/code/ns4/dir1]
+comparing [lp5e-code-1.0-may2020/code/ns4/dir1/sub] [lp5e-code-1.0-jun1813/code/ns4/dir1/sub]
+comparing [lp5e-code-1.0-may2020/code/ns3] [lp5e-code-1.0-jun1813/code/ns3]
+comparing [lp5e-code-1.0-may2020/code/ns3/dir] [lp5e-code-1.0-jun1813/code/ns3/dir]
+comparing [lp5e-code-1.0-may2020/code/ns3/dir/__pycache__] [lp5e-code-1.0-jun1813/code/ns3/dir/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/dualpkg] [lp5e-code-1.0-jun1813/code/dualpkg]
+comparing [lp5e-code-1.0-may2020/code/dualpkg/__pycache__] [lp5e-code-1.0-jun1813/code/dualpkg/__pycache__]
+comparing [lp5e-code-1.0-may2020/code/pkg] [lp5e-code-1.0-jun1813/code/pkg]
+comparing [lp5e-code-1.0-may2020/code/pkg/__pycache__] [lp5e-code-1.0-jun1813/code/pkg/__pycache__]
+Phase runtime: 0.021233276
+------------------------------------------------------------------------------- 
+*Reporting tree differences
+-------------------------------------------------------------------------------
+SAMEFILE DIFFERENCES: (name, dirfrom, dirto, why)
+**These items will be replaced in dirto by automatic resolution**
+
+[('README.txt', 'lp5e-code-1.0-may2020', 'lp5e-code-1.0-jun1813', 'modtime')]
+-------------------------------------------------------------------------------
+UNIQUE ITEMS IN DIRTO: (names, dirfrom, dirto)
+**These items will be deleted from dirto by automatic resolution**
+
+[]
+-------------------------------------------------------------------------------
+UNIQUE ITEMS IN DIRFROM: (names, dirfrom, dirto)
+**These items will be copied over to dirto by automatic resolution**
+
+[(['reloadall3-alts.py'],
+  'lp5e-code-1.0-may2020/code',
+  'lp5e-code-1.0-jun1813/code')]
+-------------------------------------------------------------------------------
+MIXED MODE NAMES: (name, dirfrom, dirto)
+**These items will be replaced in dirto by automatic resolution**
+
+[]
+------------------------------------------------------------------------------- 
+*Summary
+Compared    => files: 379, folders: 43
+Differences => samefile: 1, uniqueto: 0, uniquefrom: 1, mixedmode: 0
+Changed:
+files   => created: 0, deleted: 0, replaced: 0
+folders => created: 0, deleted: 0, replaced: 0
+-------------------------------------------------------------------------------
+Finished.
+~/Desktop/temp/LP5E-zip$ 
